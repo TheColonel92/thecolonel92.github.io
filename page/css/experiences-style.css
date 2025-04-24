@@ -1,0 +1,33 @@
+/* Professional Experiences Section */
+#experiences {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#experiences h2 {
+    font-size: 2.5rem;
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+/* Alignement des cartes avec flexbox pour une hauteur uniforme */
+#experiences .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#experiences .col-md-6 {
+    display: flex;
+    justify-content: center;
+}
+
+#experiences .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#experiences .card-body {
+    flex-grow: 1;
+}

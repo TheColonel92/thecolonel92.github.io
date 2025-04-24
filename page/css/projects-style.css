@@ -1,0 +1,36 @@
+/* Achievements Section */
+#achievements {
+    background: #f9f9f9;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#achievements h2 {
+    font-size: 2.5rem;
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+#achievements p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+#achievements .card {
+    margin: 1.0rem; /* Ajoute un espacement entre les cartes */
+    min-height: 300px; /* Vous pouvez ajuster cette hauteur selon vos besoins */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#achievements .card-body {
+    flex-grow: 1; /* Fait en sorte que cette section prenne tout l'espace restant */
+}
+
+#achievements .logo-agence {
+    width: 25px; /* Ajuste la taille selon tes besoins */
+    height: auto;
+    text-align: center;
+}

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Icône de l'onglet -->
+        <link rel="icon" href="https://avatars.githubusercontent.com/u/174519077?v=4">
+        <!-- Nom de l'onglet -->
+        <title>Portfolio - UNITE</title>
+        <!-- Description du site -->
+        <meta name="description" content="Portfolio of Leo Jean UNITE, a data science student passionate about aviation and technology.">
+        <!-- Mots-clés pour le référencement -->
+        <meta name="keywords" content="Portfolio, Leo Jean UNITE, Data Science, Aviation, Technology, Student">
+        <!-- Lien vers le CSS Bootstrap -->
+        <link rel="stylesheet" href="../css_bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="css/presentation-style.css">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body class="en">
+        <!-- Barre de navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container">
+                <!-- Logo et Titre -->
+                <a class="navbar-brand" href="#">
+                    <img src="https://avatars.githubusercontent.com/u/174519077?v=4" alt="PP" width="40" height="40" class="d-inline-block">
+                    Portfolio of Leo Jean UNITE
+                </a>
+                <!-- Horloge -->
+                <div class="d-inline-block ms-3 justify-content-center">
+                    <span id="time-france" class="text-light me-3"></span>
+                    <span id="time-philippines" class="text-light"></span>
+                </div>
+                <script>
+                    function updateTime() {
+                        const franceTime = new Date().toLocaleString("fr-FR", { timeZone: "Europe/Paris", hour: "2-digit", minute: "2-digit" });
+                        const philippinesTime = new Date().toLocaleString("en-PH", { timeZone: "Asia/Manila", hour: "2-digit", minute: "2-digit" });
+                        document.getElementById("time-france").textContent = `France: ${franceTime}`;
+                        document.getElementById("time-philippines").textContent = `Philippines: ${philippinesTime}`;
+                    }
+                    setInterval(updateTime, 1000);
+                    updateTime();
+                </script>
+                <!-- Bouton pour mobiles -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Liens de navigation -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Accueil -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index-en.html">
+                                <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703068568/icones-cv/rounded/contact/blanc/icone-cv-adresse-maison-blanc_lhzzon" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                                Home
+                            </a>
+                        </li>
+                        <!-- Presentation -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703078094/icones-cv/rounded/rubriques/blanc/icone-cv-profil-badge-blanc_xdq85b" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                                Presentation
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="PortfolioDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="experiences-en.html">
+                                        <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703077714/icones-cv/rounded/rubriques/icone-cv-experience-professionnelle-2_rybho4" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                                        Experiences
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="projects-en.html">
+                                        <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703077714/icones-cv/rounded/rubriques/icone-cv-experience-professionnelle_bffe46" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                                        Projects
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../contact-en.html">
+                                        <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703068363/icones-cv/rounded/contact/icone-cv-mail_s1hkao" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                                        Contact Me
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Réseaux sociaux -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="socialDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703068576/icones-cv/rounded/contact/blanc/icone-cv-reseaux-sociaux-blanc_joqcnq" alt="" width="25" height="25" class="d-inline-block">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="socialDropdown">
+                                <!-- GitHub -->
+                                <li>
+                                    <a class="dropdown-item social_link-github" href="https://github.com/TheColonel92" target="_blank">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="25" height="25" class="d-inline-block align-text-top">
+                                        GitHub
+                                    </a>
+                                </li>
+                                <!-- LinkedIn -->
+                                <li>
+                                    <a class="dropdown-item social_link-linkedin" href="https://www.linkedin.com/in/lj-unite/" target="_blank">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="25" height="25" class="d-inline-block align-text-top">
+                                        LinkedIn
+                                    </a>
+                                </li>
+                                <!-- Discord -->
+                                <li>
+                                    <a class="dropdown-item social_link-discord" href="https://discord.gg/CBsSTKzjrY" target="_blank">
+                                        <img src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1-1.png" alt="Discord" width="25" height="25" class="d-inline-block align-text-top">
+                                        Discord
+                                    </a>
+                                </li>
+                                <!-- Instagram -->
+                                <li>
+                                    <a class="dropdown-item social_link-ig" href="https://www.instagram.com/leoune_92/" target="_blank">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" alt="Instagram" width="25" height="25" class="d-inline-block align-text-top">
+                                        Instagram
+                                    </a>
+                                </li>
+                                <!-- Facebook/Messenger -->
+                                <li>
+                                    <a class="dropdown-item social_link-fb" href="https://www.facebook.com/profile.php?id=100011170991125" target="_blank">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Logo_de_Facebook.png/767px-Logo_de_Facebook.png" alt="Facebook" width="25" height="25" class="d-inline-block align-text-top">
+                                        Facebook
+                                    </a>
+                                </li>
+                                <!-- Youtube -->
+                                <li>
+                                    <a class="dropdown-item social_link-yt" href="https://www.youtube.com/@ColUnite" target="_blank">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/600px-YouTube_icon_%282013-2017%29.png" alt="Youtube" width="25" height="25" class="d-inline-block align-text-top">
+                                        Youtube
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Download CV -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../docs/cv/CV_Leo-Jean-UNITE_BUT2-VCOD-FI.pdf" download>
+                                <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703078094/icones-cv/rounded/rubriques/blanc/icone-cv-profil-badge-2-blanc_oze0ha" alt="CV" width="25" height="25" class="d-inline-block">
+                                CV
+                            </a>
+                        </li>
+                        <!-- Language Selection -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="presentation-en.html" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://em-content.zobj.net/source/twitter/408/flag-united-kingdom_1f1ec-1f1e7.png" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="presentation-fr.html">
+                                        <img src="https://em-content.zobj.net/source/twitter/408/flag-france_1f1eb-1f1f7.png" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                                        French
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="presentation-fil.html">
+                                        <img src="https://em-content.zobj.net/source/twitter/408/flag-philippines_1f1f5-1f1ed.png" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                                        Filipino
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Accueil -->
+        <header class="text-center text-white position-relative">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.5); height: 100vh;"></div>
+            <div class="overlay">
+                <h1>Leo Jean UNITE</h1>
+                <p>I am a second-year data science student at Université Paris IUT, driven by a passion for aviation, advanced statistics, and technology.</p><br>
+                <a href="../docs/cv/CV_Leo-Jean-UNITE_BUT2-VCOD-FI.pdf" class="cta-button btn btn-primary btn-lg" download>Download my CV</a>
+            </div>
+        </header>
+
+        <!-- Présentation -->
+        <section id="presentation" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <!-- Image centrée -->
+                    <img src="../img/IMG20240803183214.jpg" alt="Moi" class="rounded-circle member-img mb-2">
+                    <!-- Titre centré -->
+                    <h2>About me</h2>
+                </div>
+                <!-- Texte aligné à gauche -->
+                <div class="text-left">
+                    <p>
+                        I am Léo Jean Unite, a second year BUT Data Science student at IUT Paris - Rives de Seine. Passionate about data analysis, I combine my technical skills with an ability to solve complex problems using tools like Python, R, SQL, Power BI and Excel. My professional career has allowed me to develop management skills, particularly in the airport sector and in accounting. These experiences taught me how to work in a team, manage projects and collaborate with clients.
+                    </p>
+                    <br>
+                    <p>
+                        At the same time, I enriched my knowledge thanks to several university projects, where I explored data processing, analysis and transformation.
+                    </p>
+                    <br>
+                    <p>
+                        I am also passionate about travel, video games and music, especially KPOP. Outside of my studies, I am pursuing my dream of becoming a pilot by following training to obtain my aeronautical license.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Diplômes -->
+        <section id="academic-qualifications" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center">My qualifications</h2>
+                <p class="text-center mb-4">Here is an overview of my academic qualifications:</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <img src="https://lyceeionesco.fr/modules/kcorrect/sign_ionesco.jpg" class="card-img-top" alt="Diplôme BAC">
+                            <div class="card-body">
+                                <h5 class="card-title">Technological Baccalaureate STI2D</h5>
+                                <p class="card-text">Lycée Eugène Ionesco, 2018 - 2021</p>
+                                <p class="card-text">Specialization in Digital Information Systems, with honors.</p>
+                                <p class="card-body">Obtained at Lycée Eugène Ionesco, specializing in Digital Information Systems. This degree provided an early foundation in technology and computing, solidifying my passion for digital innovation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <img src="../img/acv.png" class="card-img-top" alt="Diplôme BIA">
+                            <div class="card-body">
+                                <h5 class="card-title">Aeronautical Initiation Certificate (BIA)</h5>
+                                <p class="card-text">Lycée Eugène Ionesco, 2021</p>
+                                <p class="card-text"> </p>
+                                <p class="card-body">This certificate introduced me to the fascinating world of aviation, covering theoretical foundations and an in-depth understanding of flight mechanisms and aerodynamics.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <img src="../img/UniversiteParis_IUTParis-RdS.png" class="card-img-top" alt="Formation académique">
+                            <div class="card-body">
+                                <h5 class="card-title">University Bachelors of Technology Data Science</h5>
+                                <p class="card-text">Université Paris Cité, 2022 - Present</p>
+                                <p class="card-text"> </p>
+                                <p class="card-body">Currently pursuing at Université Paris IUT, this program provides expertise in machine learning, statistical analysis, and database management, preparing me for innovative projects leveraging the power of data in various fields.</p>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">BUT SD program</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">University Bachelors of Technology Data Science</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            The <b>University Bachelor of Technology (B.U.T.) in Statistics and Business Intelligence (SD)</b> is a three-year program designed to train professionals capable of assisting decision-making through data management, statistical analysis, and programming. Graduates are skilled in data collection, ensuring quality, security, and storage in structured databases, and performing statistical analyses to create decision-making tools.<br>
+
+                            <br><b>Study Tracks:</b><br>
+                            1. <b>Statistical Exploration and Modelling</b><br>
+                            This track trains professionals in data collection, processing, and statistical analysis. Students learn to identify and apply appropriate statistical tools to solve specific problems and present results in the form of reports, tables, and graphs.<br>
+                            <b>Career prospects</b>: Statistical studies manager, data analyst, data scientist, statistician, marketing research manager.<br>
+                            2. <b>Visualization and Design of Decision-Making Tools</b><br>
+                            This track focuses on the implementation of decision-making solutions, including automating various steps of the decision process. Students gain expertise in managing data connections, transformation (ETL), and business calculations, as well as producing data visualizations through dashboards and reporting tools for non-technical end-users.<br>
+                            <b>Career prospects</b>: Business intelligence (BI) developer, data manager, project manager, big data developer.<br>
+
+                            <br><b>Core Skills:</b><br>
+                            The program develops four core competencies:<br>
+                            <ul>
+                                <li>Data processing for decision-making</li>
+                                <li>Statistical data analysis</li>
+                                <li>Professional data visualization and reporting</li>
+                                <li>Specialized skills depending on the chosen track:
+                                    <ul>
+                                        <li><b>Statistical Exploration and Modelling</b>: Developing statistical models</li>
+                                        <li><b>Visualization and Design of Decision-Making Tools</b>: Creating decision-support tools</li>
+                                    </ul>
+                                </li>
+                            </ul><br>
+                            <br><b>Admission Requirements:</b><br>
+                            The program is open to high school graduates from general or technological backgrounds, as well as university students seeking to change their academic path. Admissions are based on academic records, and some departments may conduct interviews. The program can also be pursued through lifelong learning or apprenticeship contracts.
+                        </div>
+                        <a href="https://up75-my.sharepoint.com/:b:/g/personal/leo-jean_unite_etu_u-paris_fr/EapVi8aB9vVFn8gl453-c0ABb4aUx75irg-W-NKRefwYZg?e=hA3kPR" class="btn btn-primary" download>
+                            BUT SD program in pdf
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Social -->
+        <div class="social social-footer">
+            <div class="social_list-wrapper">
+                <div class="social_list">
+                    <!-- GitHub -->
+                    <a class="social_link social_link-github" href="https://github.com/TheColonel92" target="_blank">
+                        <span class="social_link-icon-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="25" height="25" class="d-inline-block align-text-top">
+                        </span>
+                        <span class="social_text-wrapper">
+                            <span class="social_link-title">GitHub</span>
+                            <span class="social_link-comment">TheColonel92</span>
+                        </span>
+                    </a>
+                    <!-- LinkedIn -->
+                    <a class="social_link social_link-linkedin" href="https://www.linkedin.com/in/lj-unite/" target="_blank">
+                        <span class="social_link-icon-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="25" height="25" class="d-inline-block align-text-top">
+                        </span>
+                        <span class="social_text-wrapper">
+                            <span class="social_link-title">LinkedIn</span>
+                            <span class="social_link-comment">Léo Jean UNITE</span>
+                        </span>
+                    </a>
+                    <!-- Discord -->
+                    <a class="social_link social_link-discord" href="https://discord.gg/CBsSTKzjrY" target="_blank">
+                        <span class="social_link-icon-wrapper">
+                            <img src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1-1.png" alt="Discord" width="25" height="25" class="d-inline-block align-text-top">
+                        </span>
+                        <span class="social_text-wrapper">
+                            <span class="social_link-title">Discord</span>
+                            <span class="social_link-comment">Léo Jean UNITE</span>
+                        </span>
+                    </a>
+                    <!-- Instagram -->
+                    <a class="social_link social_link-ig" href="https://www.instagram.com/leoune_92/" target="_blank">
+                        <span class="social_link-icon-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" alt="Instagram" width="25" height="25" class="d-inline-block align-text-top">
+                        </span>
+                        <span class="social_text-wrapper">
+                            <span class="social_link-title">Instagram</span>
+                            <span class="social_link-comment">leoune_92</span>
+                        </span>
+                    </a>
+                    <!-- Facebook/Messenger -->
+                    <a class="social_link social_link-fb" href="https://www.facebook.com/profile.php?id=100011170991125" target="_blank">
+                        <span class="social_link-icon-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Logo_de_Facebook.png/767px-Logo_de_Facebook.png" alt="Facebook" width="25" height="25" class="d-inline-block align-text-top">
+                        </span>
+                        <span class="social_text-wrapper">
+                            <span class="social_link-title">Facebook</span>
+                            <span class="social_link-comment">Léo Jean UNITE</span>
+                        </span>
+                    </a>
+                    <!-- Youtube -->
+                    <a class="social_link social_link-yt" href="https://www.youtube.com/@ColUnite" target="_blank">
+                        <span class="social_link-icon-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/600px-YouTube_icon_%282013-2017%29.png" alt="Youtube" width="25" height="25" class="d-inline-block align-text-top">
+                        </span>
+                        <span class="social_text-wrapper">
+                            <span class="social_link-title">Youtube</span>
+                            <span class="social_link-comment">Col. Unite</span>
+                        </span>
+                    </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer text-center py-3" role="contentinfo">
+            <div claas="footer__wrapper">
+                <div class="footer__logotypes footer-logotypes">
+                    <!-- Logo de l'entreprise -->
+                    <img src="https://avatars.githubusercontent.com/u/174519077?v=4" alt="My Logo" class="footer-logotypes__company">
+                    <div class="footer-logotypes__list global__mobile-hidden">
+                        <!-- Logo Lycée Eugène Ionesco -->
+                        <img src="https://lyceeionesco.fr/modules/kcorrect/sign_ionesco.jpg" alt="Lycée Eugène Ionesco" class="footer-logotypes__school">
+                        <!-- Logo Université Paris Cité -->
+                        <img src="https://u-paris.fr/sante/wp-content/uploads/sites/19/2020/06/Universite_Paris_logo_horizontal.jpg" alt="Université Paris Cité" class="footer-logotypes__university">
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    &copy; 2024—<span id="year"></span> Leo Jean. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+        <!-- Script Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Script pour afficher l'année actuelle dans le footer -->
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+    </body>
+</html>

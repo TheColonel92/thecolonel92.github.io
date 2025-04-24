@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fil"></html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Tab Icon -->
+        <link rel="icon" href="https://avatars.githubusercontent.com/u/174519077?v=4">
+        <!-- Tab Name -->
+        <title>Portfolio - UNITE</title>
+        <!-- Site Description -->
+        <meta name="description" content="Portfolio ni Leo Jean - Hilig sa aviation at data science">
+        <!-- Keywords for SEO -->
+        <meta name="keywords" content="Portfolio, Leo Jean UNITE, Data Science, Aviation, Teknolohiya">
+        <!-- Link to Bootstrap CSS -->
+        <link rel="stylesheet" href="css_bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body class="fil"></body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container">
+                <!-- Logo and Title -->
+                <a class="navbar-brand" href="#">
+                    <img src="https://avatars.githubusercontent.com/u/174519077?v=4" alt="PP" width="40" height="40" class="d-inline-block">
+                    Portfolio ni Leo Jean UNITE
+                </a>
+
+                <!-- Clock -->
+                <div class="d-inline-block ms-3 justify-content-center">
+                    <span id="time-france" class="text-light me-3"></span>
+                    <span id="time-philippines" class="text-light"></span>
+                </div>
+                <script>
+                    function updateTime() {
+                        const franceTime = new Date().toLocaleString("fr-FR", { timeZone: "Europe/Paris", hour: "2-digit", minute: "2-digit" });
+                        const philippinesTime = new Date().toLocaleString("en-PH", { timeZone: "Asia/Manila", hour: "2-digit", minute: "2-digit" });
+                        document.getElementById("time-france").textContent = `France: ${franceTime}`;
+                        document.getElementById("time-philippines").textContent = `Pilipinas: ${philippinesTime}`;
+                    }
+                    setInterval(updateTime, 1000);
+                    updateTime();
+                </script>
+
+                <!-- Mobile Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index-fil.html">
+                                <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703068568/icones-cv/rounded/contact/blanc/icone-cv-adresse-maison-blanc_lhzzon" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#contact-me" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703068576/icones-cv/rounded/contact/blanc/icone-cv-mail-blanc_uuqdsq" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                                Kontakin Ako
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="PortfolioDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="page/presentation-fil.html">
+                                        <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703077718/icones-cv/rounded/rubriques/icone-cv-profil-badge_gxczzr" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                                        Panimula
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="page/experiences-fil.html">
+                                        <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703077714/icones-cv/rounded/rubriques/icone-cv-experience-professionnelle-2_rybho4" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                                        Mga Karanasan
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="page/projects-fil.html">
+                                        <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703077714/icones-cv/rounded/rubriques/icone-cv-experience-professionnelle_bffe46" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                                        Mga Tagumpay
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Réseaux sociaux -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="socialDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703068576/icones-cv/rounded/contact/blanc/icone-cv-reseaux-sociaux-blanc_joqcnq" alt="" width="25" height="25" class="d-inline-block">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="socialDropdown">
+                                <!-- GitHub -->
+                                <li>
+                                    <a class="dropdown-item social_link-github" href="https://github.com/TheColonel92" target="_blank">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="25" height="25" class="d-inline-block align-text-top">
+                                        GitHub
+                                    </a>
+                                </li>
+                                <!-- LinkedIn -->
+                                <li>
+                                    <a class="dropdown-item social_link-linkedin" href="https://www.linkedin.com/in/lj-unite/" target="_blank">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="25" height="25" class="d-inline-block align-text-top">
+                                        LinkedIn
+                                    </a>
+                                </li>
+                                <!-- Discord -->
+                                <li>
+                                    <a class="dropdown-item social_link-discord" href="https://discord.gg/CBsSTKzjrY" target="_blank">
+                                        <img src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1-1.png" alt="Discord" width="25" height="25" class="d-inline-block align-text-top">
+                                        Discord
+                                    </a>
+                                </li>
+                                <!-- Instagram -->
+                                <li>
+                                    <a class="dropdown-item social_link-ig" href="https://www.instagram.com/leoune_92/" target="_blank">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" alt="Instagram" width="25" height="25" class="d-inline-block align-text-top">
+                                        Instagram
+                                    </a>
+                                </li>
+                                <!-- Facebook/Messenger -->
+                                <li>
+                                    <a class="dropdown-item social_link-fb" href="https://www.facebook.com/profile.php?id=100011170991125" target="_blank">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Logo_de_Facebook.png/767px-Logo_de_Facebook.png" alt="Facebook" width="25" height="25" class="d-inline-block align-text-top">
+                                        Facebook
+                                    </a>
+                                </li>
+                                <!-- Youtube -->
+                                <li>
+                                    <a class="dropdown-item social_link-yt" href="https://www.youtube.com/@ColUnite" target="_blank">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/600px-YouTube_icon_%282013-2017%29.png" alt="Youtube" width="25" height="25" class="d-inline-block align-text-top">
+                                        Youtube
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- I-download ang CV -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="docs/CV_Leo-Jean-UNITE_BUT2-VCOD-FI.pdf" download>
+                                <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703078094/icones-cv/rounded/rubriques/blanc/icone-cv-profil-badge-2-blanc_oze0ha" alt="CV" width="25" height="25" class="d-inline-block">
+                                CV
+                            </a>
+                        </li>
+                        <!-- Pagpili ng Wika -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://em-content.zobj.net/source/twitter/408/flag-philippines_1f1f5-1f1ed.png" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="contact-fr.html">
+                                        <img src="https://em-content.zobj.net/source/twitter/408/flag-france_1f1eb-1f1f7.png" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                                        Pranses
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="contact-en.html">
+                                        <img src="https://em-content.zobj.net/source/twitter/408/flag-united-kingdom_1f1ec-1f1e7.png" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                                        Ingles
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Contact Section -->
+        <section id="contact-me" class="py-5">
+            <h2 class="text-center">Kontakin Ako</h2>
+            <div class="formulaire">
+                <!-- Contact Form -->
+                <form action="submit_form.php" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Pangalan</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Ang iyong pangalan" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Ang iyong email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Paksa</label>
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Paksa ng iyong mensahe" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensahe</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Ang iyong mensahe" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Ipadala</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer Social -->
+        <div class="social social-footer">
+            <div class="social_list-wrapper">
+                <div class="social_list">
+                    <!-- GitHub -->
+                    <a class="social_link social_link-github" href="https://github.com/TheColonel92" target="_blank">
+                        <span class="social_link-icon-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="25" height="25" class="d-inline-block align-text-top">
+                        </span>
+                        <span class="social_text-wrapper">
+                            <span class="social_link-title">GitHub</span>
+                            <span class="social_link-comment">TheColonel92</span>
+                        </span>
+                    </a>
+                    <!-- LinkedIn -->
+                    <a class="social_link social_link-linkedin" href="https://www.linkedin.com/in/lj-unite/" target="_blank">
+                        <span class="social_link-icon-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="25" height="25" class="d-inline-block align-text-top">
+                        </span>
+                        <span class="social_text-wrapper">
+                            <span class="social_link-title">LinkedIn</span>
+                            <span class="social_link-comment">Léo Jean UNITE</span>
+                        </span>
+                    </a>
+                    <!-- Discord -->
+                    <a class="social_link social_link-discord" href="https://discord.gg/CBsSTKzjrY" target="_blank">
+                        <span class="social_link-icon-wrapper">
+                            <img src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1-1.png" alt="Discord" width="25" height="25" class="d-inline-block align-text-top">
+                        </span>
+                        <span class="social_text-wrapper">
+                            <span class="social_link-title">Discord</span>
+                            <span class="social_link-comment">Léo Jean UNITE</span>
+                        </span>
+                    </a>
+                    <!-- Instagram -->
+                    <a class="social_link social_link-ig" href="https://www.instagram.com/leoune_92/" target="_blank">
+                        <span class="social_link-icon-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" alt="Instagram" width="25" height="25" class="d-inline-block align-text-top">
+                        </span>
+                        <span class="social_text-wrapper">
+                            <span class="social_link-title">Instagram</span>
+                            <span class="social_link-comment">leoune_92</span>
+                        </span>
+                    </a>
+                    <!-- Facebook/Messenger -->
+                    <a class="social_link social_link-fb" href="https://www.facebook.com/profile.php?id=100011170991125" target="_blank">
+                        <span class="social_link-icon-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Logo_de_Facebook.png/767px-Logo_de_Facebook.png" alt="Facebook" width="25" height="25" class="d-inline-block align-text-top">
+                        </span>
+                        <span class="social_text-wrapper">
+                            <span class="social_link-title">Facebook</span>
+                            <span class="social_link-comment">Léo Jean UNITE</span>
+                        </span>
+                    </a>
+                    <!-- Youtube -->
+                    <a class="social_link social_link-yt" href="https://www.youtube.com/@ColUnite" target="_blank">
+                        <span class="social_link-icon-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/600px-YouTube_icon_%282013-2017%29.png" alt="Youtube" width="25" height="25" class="d-inline-block align-text-top">
+                        </span>
+                        <span class="social_text-wrapper">
+                            <span class="social_link-title">Youtube</span>
+                            <span class="social_link-comment">Col. Unite</span>
+                        </span>
+                    </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer text-center py-3" role="contentinfo">
+            <div claas="footer__wrapper">
+                <div class="footer__logotypes footer-logotypes">
+                    <!-- Company Logo -->
+                    <img src="https://avatars.githubusercontent.com/u/174519077?v=4" alt="My Logo" class="footer-logotypes__company">
+                    <div class="footer-logotypes__list global__mobile-hidden">
+                        <!-- Lycée Eugène Ionesco Logo -->
+                        <img src="https://lyceeionesco.fr/modules/kcorrect/sign_ionesco.jpg" alt="Lycée Eugène Ionesco" class="footer-logotypes__school">
+                        <!-- Université Paris Cité Logo -->
+                        <img src="https://u-paris.fr/sante/wp-content/uploads/sites/19/2020/06/Universite_Paris_logo_horizontal.jpg" alt="Université Paris Cité" class="footer-logotypes__university">
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    &copy; 2024—<span id="year"></span> Leo Jean. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap Script -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Script to display the current year in the footer -->
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+    </body>
+</html>

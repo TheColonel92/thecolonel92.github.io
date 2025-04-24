@@ -1,0 +1,369 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: #004080;
+}
+
+/* Barre de navigation */
+.navbar {
+    z-index: 1030;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Légère ombre */
+}
+
+section {
+    scroll-margin-top: 50px; /* Décalage pour ancrage automatique */
+}
+
+.navbar-nav .nav-link.active {
+    color: #007bff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0056b3;
+}
+
+header .overlay{
+    z-index: 1; /* Pour garantir que le contenu reste visible */
+    background: rgba(0, 0, 0, 0.5); /* Ajoute une transparence pour rendre le texte lisible */
+    padding: 20px; /* Ajoute un peu d'espace autour du texte */
+    border-radius: 10px; /* Coins arrondis pour un effet esthétique */
+    margin: 0 10%; /* Centre le contenu dans le header */
+    margin-bottom: 20px; /* Ajoute un espace en bas pour éviter que le texte touche le bas de l'écran */
+}
+
+main {
+    padding-top: 25px;
+    flex: 1; /* Permet au main de prendre tout l'espace restant */
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+.site-choice {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+    transition: transform 0.3s ease;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.site-choice::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+}
+
+.site-choice .card-body {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    text-align: center;
+}
+
+.site-choice:hover {
+    transform: scale(1.02);
+}
+
+/* Footer Social Media */
+.social {
+    position: relative;
+    background-color: #161C23;
+}
+
+.social-footer {
+    /* margin-top: 80px; */
+}
+
+.social_list-wrapper {
+    background-color: #1E323C;
+}
+
+.social_list {
+    display: flex;
+    width: 1180px;
+    min-height: 60px;
+    margin: 0 auto
+}
+
+.social_link-icon-wrapper {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 20px
+}
+
+.social_text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 3px 10px 3px 0
+}
+
+.social_link {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    transition: background .3s ease
+}
+
+.social_link:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+.social_link svg {
+    fill: #fff;
+    transition: fill .3s ease
+}
+
+.social_link-github {
+    background-color: #333; /* GitHub's official color */
+}
+
+.social_link-github:hover {
+    background-color: #24292e; /* Slightly lighter for hover effect */
+}
+
+.social_link-github svg {
+    width: 30px;
+    height: 30px;
+}
+
+.social_link-linkedin {
+    background-color: #005582; /* LinkedIn's official color */
+}
+
+.social_link-linkedin:hover {
+    background-color: #0077b5; /* Darker shade for hover effect */
+}
+
+.social_link-linkedin svg {
+    width: 30px;
+    height: 30px;
+}
+
+.social_link-discord {
+    background-color: #4752c4; /* Discord's official color */
+}
+
+.social_link-discord:hover {
+    background-color: #5865f2; /* Darker shade for hover effect */
+}
+
+.social_link-discord svg {
+    width: 30px;
+    height: 30px;
+}
+
+.social_link-ig {
+    background-color: #95287f
+}
+
+.social_link-ig:hover {
+    background: #bd33a1
+}
+
+.social_link-ig svg {
+    width: 30px;
+    height: 30px
+}
+
+.social_link-fb {
+    background-color: #005cbb
+}
+
+.social_link-fb:hover {
+    background-color: #0075ee
+}
+
+.social_link-fb svg {
+    width: 32px;
+    height: 32px
+}
+
+.social_link-yt {
+    background-color: #c41717
+}
+
+.social_link-yt:hover {
+    background-color: #e62828
+}
+
+.social__link-yt svg {
+    width: 30px;
+    height: 21px
+}
+
+.social__link-title {
+    display: block;
+    font-size: 16px;
+    line-height: 19px
+}
+
+.social__link-comment {
+    display: block;
+    font-size: 14px;
+    line-height: 16px
+}
+
+@media(max-width: 500px) {
+    .social-footer {
+        margin-top:40px
+    }
+    .social_list {
+        width: 100%;
+        height: 40px
+    }
+    .social_link {
+        justify-content: center;
+        padding: 0
+    }
+    .social_link svg {
+        margin-right: 0
+    }
+    .social_link-icon-wrapper {
+        padding: 0
+    }
+    .social_text-wrapper {
+        display: none
+    }
+}
+
+
+
+/* Footer */
+footer {
+    display: block
+}
+
+.footer {
+    position: relative;
+    margin-top: auto;
+    background: rgba(0,0,0,.3)
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1180px;
+    margin: 0 auto;
+    padding: 20px 0 30px;
+    border: none;
+    background: none
+}
+
+@media(max-width: 500px) {
+    .footer__wrapper {
+        width:100%;
+        padding: 10px 10px
+    }
+}
+
+.footer__logotypes {
+    margin-bottom: 30px
+}
+
+@media(max-width: 500px) {
+    .footer__logotypes {
+        order:2;
+        margin-bottom: 0
+    }
+}
+
+.footer-logotypes {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end
+}
+
+@media(max-width: 500px) {
+    .footer-logotypes {
+        display:none
+    }
+}
+
+.footer-logotypes__company {
+    width: 75px;
+    margin-left: 35px;
+    margin-top: -8px
+}
+
+.footer-logotypes__school,.footer-logotypes__university {
+    width: 140px;
+    margin-right: 35px;
+    margin-top: -8px
+}
+
+.footer__copyright {
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: #546E7A
+}
+
+@media(max-width: 500px) {
+    .footer__copyright {
+        display:none
+    }
+}
+
+@media(max-width: 500px) {
+    .footer-logotypes {
+        align-items:center
+    }
+
+    .footer-logotypes__company {
+        width: 62px;
+        height: 29px;
+        margin-right: 0
+    }
+
+    .footer-logotypes__school,.footer-logotypes__university {
+        display: block
+    }
+
+    .footer-logotypes__iut {
+        width: 25px;
+        height: 25px
+    }
+}
+
+/* Contact Section */
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%
+}
