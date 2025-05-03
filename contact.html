@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="css_bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
+    
     <body class="fr">
         <!-- Barre de navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -22,29 +23,61 @@
                 <!-- Logo et Titre -->
                 <a class="navbar-brand" href="#">
                     <img src="https://avatars.githubusercontent.com/u/174519077?v=4" alt="PP" width="40" height="40" class="d-inline-block">
-                    <span
-                        data-lang-fr="Portfolio de Leo Jean UNITE"
-                        data-lang-en="Portfolio of Leo Jean UNITE"
-                        data-lang-fil="Portfolio ni Leo Jean UNITE"
-                    >Portfolio de Leo Jean UNITE</span>
+                    Portfolio de Leo Jean UNITE
                 </a>
+
                 <!-- Horloge -->
                 <div class="d-inline-block ms-3 justify-content-center">
                     <span id="time-france" class="text-light me-3"></span>
                     <span id="time-philippines" class="text-light"></span>
                 </div>
+
                 <!-- Bouton pour mobiles -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <!-- Liens de navigation -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
+                        <!-- Accueil -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703068568/icones-cv/rounded/contact/blanc/icone-cv-adresse-maison-blanc_lhzzon" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                                Accueil
+                            </a>
+                        </li>
+                        <!-- Présentation -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#contact-me" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703068576/icones-cv/rounded/contact/blanc/icone-cv-mail-blanc_uuqdsq" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                                Contactez-moi
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="PortfolioDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="page/presentation-fr.html">
+                                        <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703077718/icones-cv/rounded/rubriques/icone-cv-profil-badge_gxczzr" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                                        Présentation
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="page/experiences-fr.html">
+                                        <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703077714/icones-cv/rounded/rubriques/icone-cv-experience-professionnelle-2_rybho4" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                                        Expériences
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="page/projects-fr.html">
+                                        <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703077714/icones-cv/rounded/rubriques/icone-cv-experience-professionnelle_bffe46" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                                        Réalisations
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                         <!-- Réseaux sociaux -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="socialDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703068576/icones-cv/rounded/contact/blanc/icone-cv-reseaux-sociaux-blanc_joqcnq" alt="" width="25" height="25" class="d-inline-block">
-                                Social Media
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="socialDropdown">
                                 <!-- GitHub -->
@@ -100,23 +133,16 @@
                             <ul class="dropdown-menu" aria-labelledby="CVDropdown">
                                 <li>
                                     <!-- CV de Stage -->
-                                    <a class="dropdown-item" href="docs/cv/CV_Stage_Leo-Jean-UNITE_FR.pdf" target="_blank" download>
+                                    <a class="dropdown-item" href="docs/cv/CV_Stage_Leo-Jean-UNITE_FR.pdf" download>
                                         <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703077718/icones-cv/rounded/rubriques/icone-cv-profil-badge-2_vboljs" alt="CV" width="25" height="25" class="d-inline-block">
                                         CV de Stage
                                     </a>
                                 </li>
                                 <li>
                                     <!-- CV d'Alternance -->
-                                    <a class="dropdown-item" href="docs/cv/CV_Alternance_Leo-Jean-UNITE_FR.pdf" target="_blank" download>
+                                    <a class="dropdown-item" href="docs/cv/CV_Alternance_Leo-Jean-UNITE_FR.pdf" download>
                                         <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703077718/icones-cv/rounded/rubriques/icone-cv-profil-badge-2_vboljs" alt="CV" width="25" height="25" class="d-inline-block">
                                         CV d'Alternance
-                                    </a>
-                                </li>
-                                <!-- CV in English -->
-                                <li>
-                                    <a class="dropdown-item" href="docs/CV_Leo-Jean-UNITE_BUT2-VCOD-FI.pdf" target="_blank" download>
-                                        <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703077718/icones-cv/rounded/rubriques/icone-cv-profil-badge-2_vboljs" alt="CV" width="25" height="25" class="d-inline-block">
-                                        My CV
                                     </a>
                                 </li>
                             </ul>
@@ -137,107 +163,65 @@
             </div>
         </nav>
 
-        <!-- Choix de page -->
-        <section>
-            <!-- Conteneur principal -->
-            <main class="text-center d-flex flex-column" style="flex: 1; background-image: url('https://avatars.githubusercontent.com/u/174519077'); background-size: cover; background-position: center; overflow-x: hidden;">
-                <header class="text-center text-white">
-                    <div class="overlay">
-                        <h1
-                        data-lang-fr="Choix du site"
-                        data-lang-en="Site Selection"
-                        data-lang-fil="Piliin ang site"
-                        >Choix du site</h1>
+        <!-- Contact Section -->
+        <section id="contact-me" class="py-5">
+            <h2 class="text-center"
+            data-lang-fr="Contactez-moi"
+            data-lang-en="Contact Me"
+            data-lang-fil="Makipag-ugnayan sa Akin">Contactez-moi</h2>
+            <div class="formulaire">
+                <!-- Contact Form -->
+                <form action="submit_form.php" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label"
+                            data-lang-fr="Nom"
+                            data-lang-en="Name"
+                            data-lang-fil="Pangalan">Nom</label>
+                        <input type="text" class="form-control" id="name" name="name" 
+                            placeholder="Votre nom" 
+                            data-lang-fr="Votre nom" 
+                            data-lang-en="Your name" 
+                            data-lang-fil="Ang iyong pangalan" required>
                     </div>
-                </header>
-                <!-- Conteneur pour les cartes -->
-                <div class="row justify-content-center gx-4 gy-4">
-                    <!-- Présentation -->
-                    <div class="col-md-5">
-                        <a href="page/presentation-fr.html" class="text-decoration-none">
-                            <div class="card bg-dark text-white border-0 shadow site-choice" style="background-image: url('img/DataAF.png');">
-                                <div class="card-body">
-                                    <header class="text-center text-white">
-                                        <div class="overlay">
-                                            <h4
-                                            data-lang-fr="Présentation"
-                                            data-lang-en="Presentation"
-                                            data-lang-fil="Pagpapakilala">Présentation</h4>
-                                            <p
-                                            data-lang-fr="Découvrez qui je suis, d'où je viens et mes passions."
-                                            data-lang-en="Discover who I am, where I come from, and my passions"
-                                            data-lang-fil="Alamin kung sino ako, saan ako nanggaling, at ang aking mga hilig.">Découvrez qui je suis, d'où je viens et mes passions.</p>
-                                        </div>
-                                    </header>
-                                </div>
-                            </div>
-                        </a>
+                    <div class="mb-3">
+                        <label for="email" class="form-label"
+                            data-lang-fr="Email"
+                            data-lang-en="Email"
+                            data-lang-fil="Email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" 
+                            placeholder="Votre email" 
+                            data-lang-fr="Votre email" 
+                            data-lang-en="Your email" 
+                            data-lang-fil="Ang iyong email" required>
                     </div>
-                    <!-- Expériences -->
-                    <div class="col-md-5">
-                        <a href="page/experiences-fr.html" class="text-decoration-none">
-                            <div class="card bg-dark text-white border-0 shadow site-choice" style="background-image: url('img/LFPG-GRD.jpg');">
-                                <div class="card-body">
-                                    <header class="text-center text-white">
-                                        <div class="overlay">
-                                            <h4
-                                            data-lang-fr="Expériences"
-                                            data-lang-en="Experiences"
-                                            data-lang-fil="Karanasan">Expériences</h4>
-                                            <p
-                                            data-lang-fr="Découvrez mon parcours professionnel et mes compétences."
-                                            data-lang-en="Discover my professional background and skills."
-                                            data-lang-fil="Alamin ang aking propesyonal na karanasan at mga kasanayan.">Découvrez mon parcours professionnel et mes compétences.</p>
-                                        </div>
-                                    </header>
-                                </div>
-                            </div>
-                        </a>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label"
+                            data-lang-fr="Sujet"
+                            data-lang-en="Subject"
+                            data-lang-fil="Paksa">Sujet</label>
+                        <input type="text" class="form-control" id="subject" name="subject" 
+                            placeholder="Sujet de votre message" 
+                            data-lang-fr="Sujet de votre message" 
+                            data-lang-en="Subject of your message" 
+                            data-lang-fil="Paksa ng iyong mensahe" required>
                     </div>
-                    <!-- Réalisations -->
-                    <div class="col-md-5">
-                        <a href="page/projects-fr.html" class="text-decoration-none">
-                            <div class="card bg-dark text-white border-0 shadow site-choice" style="background-image: url('https://avatars.githubusercontent.com/u/174519077?v=4');">
-                                <div class="card-body">
-                                    <header class="text-center text-white">
-                                        <div class="overlay">
-                                            <h4
-                                            data-lang-fr="Réalisations"
-                                            data-lang-en="Achievements"
-                                            data-lang-fil="Mga Nagawa">Réalisations</h4>
-                                            <p
-                                            data-lang-fr="Découvrez mes projets et réalisations."
-                                            data-lang-en="Discover my projects and achievements."
-                                            data-lang-fil="Alamin ang aking mga proyekto at nagawa.">Découvrez mes projets et réalisations.</p>
-                                        </div>
-                                    </header>
-                                </div>
-                            </div>
-                        </a>
+                    <div class="mb-3">
+                        <label for="message" class="form-label"
+                            data-lang-fr="Message"
+                            data-lang-en="Message"
+                            data-lang-fil="Mensahe">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" 
+                            placeholder="Votre message" 
+                            data-lang-fr="Votre message" 
+                            data-lang-en="Your message" 
+                            data-lang-fil="Ang iyong mensahe" required></textarea>
                     </div>
-                    <!-- Contact -->
-                    <div class="col-md-5">
-                        <a href="contact.html"  class="text-decoration-none">
-                            <div class="card bg-dark text-white border-0 shadow site-choice" style="background-image: url('img/DataADP.png');">
-                                <div class="card-body">
-                                    <header class="text-center text-white">
-                                        <div class="overlay">
-                                            <h4
-                                            data-lang-fr="Contact"
-                                            data-lang-en="Contact"
-                                            data-lang-fil="Makipag-ugnayan">Contact</h4>
-                                            <p
-                                            data-lang-fr="Contactez-moi pour toute question ou collaboration."
-                                            data-lang-en="Contact me for any questions or collaborations."
-                                            data-lang-fil="Makipag-ugnayan sa akin para sa anumang mga tanong o pakikipagtulungan.">Contactez-moi pour toute question ou collaboration.</p>
-                                        </div>
-                                    </header>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </main>
+                    <button type="submit" class="btn btn-primary"
+                        data-lang-fr="Envoyer"
+                        data-lang-en="Send"
+                        data-lang-fil="Ipadala">Envoyer</button>
+                </form>
+            </div>
         </section>
 
         <!-- Footer Social -->
