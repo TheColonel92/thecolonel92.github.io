@@ -105,7 +105,7 @@ main {
 
 .social_list {
     display: flex;
-    width: 1180px;
+    width: 1180px; 
     min-height: 60px;
     margin: 0 auto
 }

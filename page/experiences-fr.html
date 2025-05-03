@@ -205,6 +205,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Initiation en hélicoptère -->
                     <div class="col-md-4">
                         <div class="card shadow-sm">
                             <img src="../img/initchop.jpg" class="card-img-top" alt="Initiation en hélicoptère">
@@ -215,9 +216,70 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Stage en Municipalité de Kalibo -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <img src="https://th.bing.com/th/id/OIP.AcCcawrYbcx5pNVvi3ziuwAAAA?w=138&h=150&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="card-img-top" alt="LGU Kalibo">
+                            <div class="card-body">
+                                <h5 class="card-title" id="titleKalibo">Stage en Municipalité de Kalibo</h5>
+                                <p class="card-text" id="locationKalibo">Kalibo, Philippines, En cours depuis le 28 Avril 2025</p>
+                                <p class="card-body" id="descriptionKalibo">Pour mon stage de deuxième année en BUT SD, j'ai eu l'opportunité de le réaliser au sein de l'Office of the Municipal Planning and Development Coordinator LGU Kalibo. Ce stage consistait à assister à la mise à jour du plan d'occupation des sols et à l'évaluation des risques climatiques et de catastrophes pour la municipalité de Kalibo, aux Philippines.</p>
+                                <!-- Site de la Municipalité -->
+                                <a href="https://kalibo.gov.ph/" target="_blank">
+                                    Site de la Municipalité de Kalibo
+                                </a>
+                                <!-- Bouton pour afficher plus de details -->
+                                <button class="btn btn-primary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#detailsKalibo" aria-expanded="false" aria-controls="detailsKalibo">
+                                    Voir plus de détails
+                                </button>
+                                <div class="collapse mt-2" id="detailsKalibo">
+                                    <p id="detailsKaliboContent">
+                                        Ce stage m'a permis de travailler sur des projets concrets liés à l'urbanisme et à la gestion des risques climatiques. J'ai collaboré avec une équipe multidisciplinaire pour analyser les données géographiques et proposer des solutions innovantes pour le développement durable de la municipalité. Cette expérience a renforcé mes compétences en analyse de données et en gestion de projets.<br><br>
+                                        <a href="https://kalibo.gov.ph/" target="_blank">Site de la Municipalité de Kalibo</a>
+                                    </p>
+                                    <!-- Journal de stage -->
+                                    <div id="journal-buttons" class="mt-3">
+                                        <h6>Journal de stage :</h6>
+                                        <button class="btn btn-secondary" onclick="toggleDay('LGUD1Content')">Day 1</button>
+                                        <button class="btn btn-secondary" onclick="toggleDay('LGUD2Content')">Day 2</button>
+                                        <button class="btn btn-secondary" onclick="toggleDay('LGUD3Content')">Day 3</button>
+                                        <script>
+                                            function toggleDay(dayId) {
+                                                const days = ['LGUD1Content', 'LGUD2Content', 'LGUD3Content'];
+                                                days.forEach(id => {
+                                                    const content = document.getElementById(id);
+                                                    if (id === dayId) {
+                                                        content.classList.toggle('collapse');
+                                                    } else {
+                                                        content.classList.add('collapse');
+                                                    }
+                                                });
+                                            }
+                                        </script>
+                                    </div>
+                                    <div class="collapse" id="LGUD1Content">
+                                        <p>Le premier jour de mon stage, j'ai été accueilli par l'équipe de l'Office of the Municipal Planning and Development Coordinator. J'ai eu l'occasion de rencontrer mes collègues et de me familiariser avec les installations. Nous avons discuté des objectifs du stage et des projets en cours.</p>
+                                        <p>Nous avons également visité le bureau de la planification municipale, où j'ai pu observer les différentes activités en cours. J'ai été impressionné par l'engagement de l'équipe envers le développement durable et la gestion des risques climatiques.</p>
+                                        <p>Enfin, j'ai eu l'occasion de participer à une réunion d'équipe où nous avons discuté des priorités pour la semaine à venir. J'étais enthousiaste à l'idée de commencer à travailler sur les projets en cours.</p>
+                                    </div>
+                                    <div class="collapse" id="LGUD2Content">
+                                        <p>Le deuxième jour, j'ai été impliqué dans la mise à jour du plan d'occupation des sols de la municipalité. J'ai travaillé avec l'équipe pour analyser les données géographiques et identifier les zones à risque. Nous avons utilisé des outils de cartographie pour visualiser les informations.</p>
+                                        <p>J'ai également assisté à une réunion avec des représentants d'autres départements pour discuter des projets en cours. C'était intéressant de voir comment différents services collaboraient pour atteindre des objectifs communs.</p>
+                                        <p>À la fin de la journée, j'ai eu l'occasion de poser des questions sur le processus de planification et d'apprendre davantage sur les défis auxquels la municipalité est confrontée en matière de développement durable.</p>
+                                    </div>
+                                    <div class="collapse" id="LGUD3Content">
+                                        <p>Le troisième jour, j'ai participé à une session de formation sur l'évaluation des risques climatiques. Nous avons appris à utiliser des outils d'analyse pour évaluer les impacts potentiels des catastrophes naturelles sur la municipalité.</p>
+                                        <p>J'ai également eu l'occasion de travailler sur un projet spécifique lié à la gestion des déchets. J'ai proposé des idées pour améliorer le système de collecte et de tri des déchets dans la municipalité.</p>
+                                        <p>À la fin de la journée, j'ai présenté mes idées à l'équipe, et j'ai reçu des commentaires constructifs. Cela m'a motivé à continuer à travailler sur ce projet et à explorer d'autres solutions pour améliorer la durabilité de la municipalité.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        <!-- Fin de la section Expériences -->
 
         <!-- Footer Social -->
         <div class="social social-footer">
@@ -250,7 +312,7 @@
                         </span>
                         <span class="social_text-wrapper">
                             <span class="social_link-title">Discord</span>
-                            <span class="social_link-comment">Léo Jean UNITE</span>
+                            <span class="social_link-comment">TheColonel's HQ</span>
                         </span>
                     </a>
                     <!-- Instagram -->
