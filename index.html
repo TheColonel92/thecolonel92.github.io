@@ -22,23 +22,17 @@
                 <!-- Logo et Titre -->
                 <a class="navbar-brand" href="#">
                     <img src="https://avatars.githubusercontent.com/u/174519077?v=4" alt="PP" width="40" height="40" class="d-inline-block">
-                    Portfolio de Leo Jean UNITE
+                    <span
+                        data-lang-fr="Portfolio de Leo Jean UNITE"
+                        data-lang-en="Portfolio of Leo Jean UNITE"
+                        data-lang-fil="Portfolio ni Leo Jean UNITE"
+                    >Portfolio de Leo Jean UNITE</span>
                 </a>
                 <!-- Horloge -->
                 <div class="d-inline-block ms-3 justify-content-center">
                     <span id="time-france" class="text-light me-3"></span>
                     <span id="time-philippines" class="text-light"></span>
                 </div>
-                <script>
-                    function updateTime() {
-                        const franceTime = new Date().toLocaleString("fr-FR", { timeZone: "Europe/Paris", hour: "2-digit", minute: "2-digit" });
-                        const philippinesTime = new Date().toLocaleString("en-PH", { timeZone: "Asia/Manila", hour: "2-digit", minute: "2-digit" });
-                        document.getElementById("time-france").textContent = `France: ${franceTime}`;
-                        document.getElementById("time-philippines").textContent = `Philippines: ${philippinesTime}`;
-                    }
-                    setInterval(updateTime, 1000);
-                    updateTime();
-                </script>
                 <!-- Bouton pour mobiles -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -50,7 +44,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="socialDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703068576/icones-cv/rounded/contact/blanc/icone-cv-reseaux-sociaux-blanc_joqcnq" alt="" width="25" height="25" class="d-inline-block">
-                                Réseaux sociaux
+                                Social Media
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="socialDropdown">
                                 <!-- GitHub -->
@@ -106,39 +100,36 @@
                             <ul class="dropdown-menu" aria-labelledby="CVDropdown">
                                 <li>
                                     <!-- CV de Stage -->
-                                    <a class="dropdown-item" href="docs/cv/CV_Stage_Leo-Jean-UNITE_FR.pdf" download>
+                                    <a class="dropdown-item" href="docs/cv/CV_Stage_Leo-Jean-UNITE_FR.pdf" target="_blank" download>
                                         <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703077718/icones-cv/rounded/rubriques/icone-cv-profil-badge-2_vboljs" alt="CV" width="25" height="25" class="d-inline-block">
                                         CV de Stage
                                     </a>
                                 </li>
                                 <li>
                                     <!-- CV d'Alternance -->
-                                    <a class="dropdown-item" href="docs/cv/CV_Alternance_Leo-Jean-UNITE_FR.pdf" download>
+                                    <a class="dropdown-item" href="docs/cv/CV_Alternance_Leo-Jean-UNITE_FR.pdf" target="_blank" download>
                                         <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703077718/icones-cv/rounded/rubriques/icone-cv-profil-badge-2_vboljs" alt="CV" width="25" height="25" class="d-inline-block">
                                         CV d'Alternance
                                     </a>
                                 </li>
+                                <!-- CV in English -->
+                                <li>
+                                    <a class="dropdown-item" href="docs/CV_Leo-Jean-UNITE_BUT2-VCOD-FI.pdf" target="_blank" download>
+                                        <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703077718/icones-cv/rounded/rubriques/icone-cv-profil-badge-2_vboljs" alt="CV" width="25" height="25" class="d-inline-block">
+                                        My CV
+                                    </a>
+                                </li>
                             </ul>
                         </li>
-                        <!-- Selection des langues -->
+                        <!-- Langue -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="https://em-content.zobj.net/source/twitter/408/flag-france_1f1eb-1f1f7.png" alt="" width="25" height="25" class="d-inline-block align-text-top">
-                                Français
+                            <a class="nav-link dropdown-toggle" id="languageDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              🌐 <span id="current-lang">Français</span>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                                <li>
-                                    <a class="dropdown-item" href="index-en.html">
-                                        <img src="https://em-content.zobj.net/source/twitter/408/flag-united-kingdom_1f1ec-1f1e7.png" alt="" width="25" height="25" class="d-inline-block align-text-top">
-                                        Anglais
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="index-fil.html">
-                                        <img src="https://em-content.zobj.net/source/twitter/408/flag-philippines_1f1f5-1f1ed.png" alt="" width="25" height="25" class="d-inline-block align-text-top">
-                                        Filipino
-                                    </a>
-                                </li>
+                              <li><a class="dropdown-item" href="#" onclick="setLanguage('fr')"><img src="https://em-content.zobj.net/source/twitter/408/flag-france_1f1eb-1f1f7.png" alt="" width="25" height="25" class="d-inline-block align-text-top"> Français</a></li>
+                              <li><a class="dropdown-item" href="#" onclick="setLanguage('en')"><img src="https://em-content.zobj.net/source/twitter/408/flag-united-kingdom_1f1ec-1f1e7.png" alt="" width="25" height="25" class="d-inline-block align-text-top"> English</a></li>
+                              <li><a class="dropdown-item" href="#" onclick="setLanguage('fil')"><img src="https://em-content.zobj.net/source/twitter/408/flag-philippines_1f1f5-1f1ed.png" alt="" width="25" height="25" class="d-inline-block align-text-top"> Filipino</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -152,7 +143,11 @@
             <main class="text-center d-flex flex-column" style="flex: 1; background-image: url('https://avatars.githubusercontent.com/u/174519077'); background-size: cover; background-position: center; overflow-x: hidden;">
                 <header class="text-center text-white">
                     <div class="overlay">
-                        <h1>Choix de page</h1>
+                        <h1
+                        data-lang-fr="Choix du site"
+                        data-lang-en="Site Selection"
+                        data-lang-fil="Piliin ang site"
+                        >Choix du site</h1>
                     </div>
                 </header>
                 <!-- Conteneur pour les cartes -->
@@ -164,8 +159,14 @@
                                 <div class="card-body">
                                     <header class="text-center text-white">
                                         <div class="overlay">
-                                            <h4>Présentation</h4>
-                                            <p>Découvrez qui je suis, d'où je viens et mes passions.<p>
+                                            <h4
+                                            data-lang-fr="Présentation"
+                                            data-lang-en="Presentation"
+                                            data-lang-fil="Pagpapakilala">Présentation</h4>
+                                            <p
+                                            data-lang-fr="Découvrez qui je suis, d'où je viens et mes passions."
+                                            data-lang-en="Discover who I am, where I come from, and my passions"
+                                            data-lang-fil="Alamin kung sino ako, saan ako nanggaling, at ang aking mga hilig.">Découvrez qui je suis, d'où je viens et mes passions.</p>
                                         </div>
                                     </header>
                                 </div>
@@ -179,8 +180,14 @@
                                 <div class="card-body">
                                     <header class="text-center text-white">
                                         <div class="overlay">
-                                            <h4>Expériences</h4>
-                                            <p>Découvrez mon parcours professionnel et mes compétences.</p>
+                                            <h4
+                                            data-lang-fr="Expériences"
+                                            data-lang-en="Experiences"
+                                            data-lang-fil="Karanasan">Expériences</h4>
+                                            <p
+                                            data-lang-fr="Découvrez mon parcours professionnel et mes compétences."
+                                            data-lang-en="Discover my professional background and skills."
+                                            data-lang-fil="Alamin ang aking propesyonal na karanasan at mga kasanayan.">Découvrez mon parcours professionnel et mes compétences.</p>
                                         </div>
                                     </header>
                                 </div>
@@ -194,8 +201,14 @@
                                 <div class="card-body">
                                     <header class="text-center text-white">
                                         <div class="overlay">
-                                            <h4>Réalisations</h4>
-                                            <p>Découvrez mes projets et réalisations.</p>
+                                            <h4
+                                            data-lang-fr="Réalisations"
+                                            data-lang-en="Achievements"
+                                            data-lang-fil="Mga Nagawa">Réalisations</h4>
+                                            <p
+                                            data-lang-fr="Découvrez mes projets et réalisations."
+                                            data-lang-en="Discover my projects and achievements."
+                                            data-lang-fil="Alamin ang aking mga proyekto at nagawa.">Découvrez mes projets et réalisations.</p>
                                         </div>
                                     </header>
                                 </div>
@@ -209,8 +222,14 @@
                                 <div class="card-body">
                                     <header class="text-center text-white">
                                         <div class="overlay">
-                                            <h4>Contact</h4>
-                                            <p>Contactez-moi pour toute question ou collaboration.</p>
+                                            <h4
+                                            data-lang-fr="Contact"
+                                            data-lang-en="Contact"
+                                            data-lang-fil="Makipag-ugnayan">Contact</h4>
+                                            <p
+                                            data-lang-fr="Contactez-moi pour toute question ou collaboration."
+                                            data-lang-en="Contact me for any questions or collaborations."
+                                            data-lang-fil="Makipag-ugnayan sa akin para sa anumang mga tanong o pakikipagtulungan.">Contactez-moi pour toute question ou collaboration.</p>
                                         </div>
                                     </header>
                                 </div>
@@ -290,10 +309,10 @@
 
         <!-- Footer -->
         <footer class="footer text-center py-3" role="contentinfo">
-            <div claas="footer__wrapper">
+            <div class="footer__wrapper">
                 <div class="footer__logotypes footer-logotypes">
                     <!-- Logo de l'entreprise -->
-                    <img src="https://avatars.githubusercontent.com/u/174519077?v=4" alt="My Logo" class="footer-logotypes__company">
+                    <img src="https://avatars.githubusercontent.com/u/174519077?v=4" alt="My Logo" class="footer-logotypes__company" loading="lazy">
                     <div class="footer-logotypes__list global__mobile-hidden">
                         <!-- Logo Lycée Eugène Ionesco -->
                         <img src="https://lyceeionesco.fr/modules/kcorrect/sign_ionesco.jpg" alt="Lycée Eugène Ionesco" class="footer-logotypes__school">
@@ -302,7 +321,7 @@
                     </div>
                 </div>
                 <div class="footer__copyright">
-                    &copy; 2024—<span id="year"></span> Leo Jean. Tous droits réservés.
+                    &copy; <span id="start-year"></span>—<span id="year"></span> Leo Jean. Tous droits réservés.
                 </div>
             </div>
         </footer>
@@ -311,7 +330,58 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Script pour afficher l'année actuelle dans le footer -->
         <script>
-            document.getElementById("year").textContent = new Date().getFullYear();
+            const currentYear = new Date().getFullYear();
+            const startYear = 2024; // Replace with the actual start year of your portfolio
+            document.getElementById("start-year").textContent = startYear;
+            document.getElementById("year").textContent = currentYear;
         </script>
+        <script>
+            // Horloge
+            function updateTime() {
+              const franceTime = new Date().toLocaleString("fr-FR", { timeZone: "Europe/Paris", hour: "2-digit", minute: "2-digit" });
+              const philippinesTime = new Date().toLocaleString("en-PH", { timeZone: "Asia/Manila", hour: "2-digit", minute: "2-digit" });
+              document.getElementById("time-france").textContent = `France: ${franceTime}`;
+              document.getElementById("time-philippines").textContent = `Philippines: ${philippinesTime}`;
+            }
+            setInterval(updateTime, 1000);
+            updateTime();
+        
+            // Changement de langue
+            function setLanguage(lang) {
+                document.documentElement.lang = lang;
+        
+                const langLabel = {
+                fr: "Français",
+                en: "English",
+                fil: "Filipino"
+                };
+                document.getElementById("current-lang").textContent = langLabel[lang] || "Français";
+        
+                document.querySelectorAll("[data-lang-fr]").forEach(el => {
+                const langAttribute = el.getAttribute("data-lang-" + lang);
+                el.textContent = langAttribute !== null ? langAttribute : el.getAttribute("data-lang-fr");
+                });
+        
+                const links = document.querySelectorAll("a[href*='-fr.html']");
+                links.forEach(link => {
+                const url = new URL(link.href, window.location.href);
+                url.pathname = url.pathname.replace(/-(fr|en|fil)\.html/, `-${lang}.html`);
+                link.href = url.pathname;
+                });
+            }
+        
+            // Initialisation de la langue au chargement de la page
+            document.addEventListener("DOMContentLoaded", () => {
+                const navLang = navigator.language.slice(0, 2);
+                const supported = ["fr", "en", "fil"];
+                const lang = supported.includes(navLang) ? navLang : "fr";
+                setLanguage(lang);
+                // Ensure the year is updated when the DOM is ready
+                function updateYear() {
+                    document.getElementById("year").textContent = new Date().getFullYear();
+                }
+                updateYear();
+            });
+          </script>
     </body>
 </html>
