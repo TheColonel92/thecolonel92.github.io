@@ -234,16 +234,47 @@
                                 </button>
                                 <div class="collapse mt-2" id="detailsKalibo">
                                     <p id="detailsKaliboContent">
-                                        Ce stage m'a permis de travailler sur des projets concrets liés à l'urbanisme et à la gestion des risques climatiques. J'ai collaboré avec une équipe multidisciplinaire pour analyser les données géographiques et proposer des solutions innovantes pour le développement durable de la municipalité. Cette expérience a renforcé mes compétences en analyse de données et en gestion de projets.<br><br>
-                                        <a href="https://kalibo.gov.ph/" target="_blank">Site de la Municipalité de Kalibo</a>
+                                        Ce stage m'a permis de contribuer à des projets d'urbanisme et de gestion des risques climatiques, renforçant mes compétences en analyse de données et gestion de projets.
                                     </p>
                                     <!-- Journal de stage -->
                                     <div id="journal-buttons" class="mt-3">
                                         <h6>Journal de stage :</h6>
-                                        <button class="btn btn-secondary" onclick="toggleDay('LGUD1Content')">Day 1</button>
-                                        <button class="btn btn-secondary" onclick="toggleDay('LGUD2Content')">Day 2</button>
-                                        <button class="btn btn-secondary" onclick="toggleDay('LGUD3Content')">Day 3</button>
+                                        <button class="btn btn-secondary" onclick="toggleWeek('LGUS1Content')">Semaine 1</button>
+                                        <button class="btn btn-secondary" onclick="toggleWeek('LGUS2Content')">Semaine 2</button>
+                                        <button class="btn btn-secondary" onclick="toggleWeek('LGUS3Content')">Semaine 3</button>
+                                        <button class="btn btn-secondary" onclick="toggleWeek('LGUS4Content')">Semaine 4</button>
+                                        <button class="btn btn-secondary" onclick="toggleWeek('LGUS5Content')">Semaine 5</button>
+                                        <button class="btn btn-secondary" onclick="toggleWeek('LGUS6Content')">Semaine 6</button>
+                                        <button class="btn btn-secondary" onclick="toggleWeek('LGUS7Content')">Semaine 7</button>
+                                        <button class="btn btn-secondary" onclick="toggletoggleWeekDay('LGUS8Content')">Semaine 8</button>
+                                        <button class="btn btn-secondary" onclick="toggleWeek('LGUS9Content')">Semaine 9</button>
+                                        <button class="btn btn-secondary" onclick="toggleWeek('LGUS10Content')">Semaine 10</button>
+                                        <button class="btn btn-secondary" onclick="toggleWeek('LGUS11Content')">Semaine 11</button>
                                         <script>
+                                            // Fonction pour afficher/masquer le contenu du journal de stage par semaine
+                                            function toggleWeek(weekId) {
+                                                const weeks = ['LGUS1Content', 'LGUS2Content', 'LGUS3Content', 'LGUS4Content', 'LGUS5Content', 'LGUS6Content', 'LGUS7Content', 'LGUS8Content'];
+                                                weeks.forEach(id => {
+                                                    const content = document.getElementById(id);
+                                                    if (id === weekId) {
+                                                        content.classList.toggle('collapse');
+                                                    } else {
+                                                        content.classList.add('collapse');
+                                                    }
+                                                });
+                                            }
+                                        </script>
+                                    </div>
+                                    <!-- Contenu du journal de stage (Semaine 1) -->
+                                    <div classe="collapse" id="LGUS1Content">
+                                        <p>Lors de ma première semaine, j'ai rencontré l'équipe, découvert les installations et discuté des objectifs du stage. J'ai été impressionné par leur engagement envers le développement durable.</p>
+                                        <button class="btn btn-secondary" onclick="toggleDay('LGUD1Content')">Jour 1 (28 Avril)</button>
+                                        <button class="btn btn-secondary" onclick="toggleDay('LGUD2Content')">Jour 2 (29 Avril)</button>
+                                        <button class="btn btn-secondary" onclick="toggleDay('LGUD3Content')">Jour 3 (30 Avril)</button>
+                                        <button class="btn btn-secondary" onclick="toggleDay('LGUD4Content')">Jour 4 (1 Mai)</button>
+                                        <button class="btn btn-secondary" onclick="toggleDay('LGUD5Content')">Jour 5 (2 Mai)</button>
+                                        <script>
+                                            // Fonction pour afficher/masquer le contenu du journal de stage
                                             function toggleDay(dayId) {
                                                 const days = ['LGUD1Content', 'LGUD2Content', 'LGUD3Content'];
                                                 days.forEach(id => {
@@ -258,20 +289,70 @@
                                         </script>
                                     </div>
                                     <div class="collapse" id="LGUD1Content">
-                                        <p>Le premier jour de mon stage, j'ai été accueilli par l'équipe de l'Office of the Municipal Planning and Development Coordinator. J'ai eu l'occasion de rencontrer mes collègues et de me familiariser avec les installations. Nous avons discuté des objectifs du stage et des projets en cours.</p>
+                                        <p>Le premier jour de mon stage (28 Avril 2025), j'ai été accueilli par l'équipe de l'Office of the Municipal Planning and Development Coordinator. J'ai eu l'occasion de rencontrer mes collègues et de me familiariser avec les installations. Nous avons discuté des objectifs du stage et des projets en cours.</p>
                                         <p>Nous avons également visité le bureau de la planification municipale, où j'ai pu observer les différentes activités en cours. J'ai été impressionné par l'engagement de l'équipe envers le développement durable et la gestion des risques climatiques.</p>
                                         <p>Enfin, j'ai eu l'occasion de participer à une réunion d'équipe où nous avons discuté des priorités pour la semaine à venir. J'étais enthousiaste à l'idée de commencer à travailler sur les projets en cours.</p>
                                     </div>
                                     <div class="collapse" id="LGUD2Content">
-                                        <p>Le deuxième jour, j'ai été impliqué dans la mise à jour du plan d'occupation des sols de la municipalité. J'ai travaillé avec l'équipe pour analyser les données géographiques et identifier les zones à risque. Nous avons utilisé des outils de cartographie pour visualiser les informations.</p>
+                                        <p>Le deuxième jour (29 Avril 2025), j'ai été impliqué dans la mise à jour du plan d'occupation des sols de la municipalité. J'ai travaillé avec l'équipe pour analyser les données géographiques et identifier les zones à risque. Nous avons utilisé des outils de cartographie pour visualiser les informations.</p>
                                         <p>J'ai également assisté à une réunion avec des représentants d'autres départements pour discuter des projets en cours. C'était intéressant de voir comment différents services collaboraient pour atteindre des objectifs communs.</p>
                                         <p>À la fin de la journée, j'ai eu l'occasion de poser des questions sur le processus de planification et d'apprendre davantage sur les défis auxquels la municipalité est confrontée en matière de développement durable.</p>
                                     </div>
                                     <div class="collapse" id="LGUD3Content">
-                                        <p>Le troisième jour, j'ai participé à une session de formation sur l'évaluation des risques climatiques. Nous avons appris à utiliser des outils d'analyse pour évaluer les impacts potentiels des catastrophes naturelles sur la municipalité.</p>
-                                        <p>J'ai également eu l'occasion de travailler sur un projet spécifique lié à la gestion des déchets. J'ai proposé des idées pour améliorer le système de collecte et de tri des déchets dans la municipalité.</p>
-                                        <p>À la fin de la journée, j'ai présenté mes idées à l'équipe, et j'ai reçu des commentaires constructifs. Cela m'a motivé à continuer à travailler sur ce projet et à explorer d'autres solutions pour améliorer la durabilité de la municipalité.</p>
+                                        <p>Le troisième jour (30 Avril 2025), j'ai commencé à prendre en main le logiciel CSPro 8.0 et à réaliser de petites extractions de données simples, comme le nombre de "PWD per Barangay" ou le nombre de "Senior Citizen with and without ID per Barangay".</p>
+                                        <p>Ces extractions nécessitaient des ajustements à réaliser sur Excel, tout en me basant sur le bilan de l'année 2022.</p>
                                     </div>
+                                    <div class="collapse" id="LGUD4Content">
+                                        <p>Le quatrième jour (1 Mai 2025), j'ai pris connaissance du logiciel QGIS pour explorer comment certaines données pouvaient être représentées sur une carte de la région.</p>
+                                        <p>J'ai pu constater la complexité du logiciel, notamment lors de la création de la carte et au début de l'élaboration de la légende.</p>
+                                    </div>
+                                    <div class="collapse" id="LGUD5Content">
+                                        <p>Le cinquième jour (2 Mai 2025), nous avons commencé à travailler sur une présentation PowerPoint (PPTX) basée sur des données préparées par un statisticien.</p>
+                                        <p>Ces données seront présentées lors d'une réunion visant à coordonner les efforts entre tous les départements municipaux et les "Barangay" de la ville, afin de planifier des initiatives de développement durable pour la semaine prochaine.</p>
+                                        <p>Cette tâche m'a permis de collaborer avec l'équipe pour structurer les informations de manière claire et impactante, en vue de leur présentation.</p>
+                                    </div>
+                                    </div>
+                                    <!-- Contenu du journal de stage (Semaine 2) -->
+                                    <div class="collapse" id="LGUS2Content">
+                                        <p>Au cours de la deuxième semaine, j'ai continué à travailler sur la mise à jour du plan d'occupation des sols. J'ai participé à des réunions avec des experts en urbanisme pour discuter des meilleures pratiques et des défis liés à la planification urbaine.</p>
+                                        <p>J'ai également eu l'occasion de visiter plusieurs sites dans la municipalité pour observer les conditions locales et comprendre comment elles influencent le développement urbain.</p>
+                                        <p>Cette expérience sur le terrain m'a permis de mieux comprendre les enjeux liés à la planification urbaine et à la gestion des risques climatiques.</p>
+                                        <button class="btn btn-secondary" onclick="toggleDay('LGUD6Content')">Jour 6 (5 Mai)</button>
+                                        <button class="btn btn-secondary" onclick="toggleDay('LGUD7Content')">Jour 7 (6 Mai)</button>
+                                        <button class="btn btn-secondary" onclick="toggleDay('LGUD8Content')">Jour 8 (7 Mai)</button>
+                                        <button class="btn btn-secondary" onclick="toggleDay('LGUD9Content')">Jour 9 (8 Mai)</button>
+                                        <button class="btn btn-secondary" onclick="toggleDay('LGUD10Content')">Jour 10 (9 Mai)</button>
+                                        <script>
+                                            // Fonction pour afficher/masquer le contenu du journal de stage
+                                            function toggleDay(dayId) {
+                                                const days = ['LGUD6Content', 'LGUD7Content', 'LGUD8Content', 'LGUD9Content', 'LGUD10Content'];
+                                                days.forEach(id => {
+                                                    const content = document.getElementById(id);
+                                                    if (id === dayId) {
+                                                        content.classList.toggle('collapse');
+                                                    } else {
+                                                        content.classList.add('collapse');
+                                                    }
+                                                });
+                                            }
+                                        </script>
+                                    </div>
+                                    <div class="collapse" id="LGUD6Content">
+                                        <p>Le sixième jour, le 05 Mai, j'ai travaillé sur la remise en forme et la correction du plan de présentation des données datant de 2022. Cela comprenait la révision et la correction des titres pour assurer leur clarté et leur pertinence.</p>
+                                        <p>J'ai également amélioré la présentation des données et des cartes en ajoutant des éléments essentiels tels que la nomenclature et les légendes. Ces ajustements visaient à rendre les informations plus compréhensibles et visuellement attrayantes.</p>
+                                    </div>
+                                    <div class="collapse" id="LGUD7Content">
+                                        <p>Le septième jour, le 06 Mai, aucun journal n'a été rédigé pour ce jour-là.</p>
+                                    </div>
+                                    <div class="collapse" id="LGUD8Content">
+                                        <p>Le huitième jour, le 07 Mai, j'ai finalisé la présentation PowerPoint contenant les données globales de 2022. Cette tâche était essentielle pour préparer la réunion prévue le lendemain.</p>
+                                        <p>J'ai également analysé les informations pour identifier les actions prioritaires à mettre en œuvre dans les prochains mois et années, en collaboration avec l'équipe.</p>
+                                    </div>
+                                    <div class="collapse" id="LGUD9Content">
+                                        <p>Le neuvième jour, le 08 Mai, j'ai participé à la Sectoral Municipality Meeting où la présentation du PPTX CBMS 2022 a eu lieu. Cette réunion a rassemblé des représentants de différents départements et des "Barangay" de la municipalité.</p>
+                                        <p>J'ai eu l'occasion d'observer comment les informations du CBMS 2022 étaient présentées et discutées, ainsi que les réactions des participants. Cela m'a permis de mieux comprendre le processus de prise de décision au sein de la municipalité et l'importance des données dans la planification stratégique.</p>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
