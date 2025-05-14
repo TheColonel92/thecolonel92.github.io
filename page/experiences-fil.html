@@ -168,8 +168,8 @@
             <div class="container">
                 <h2 class="text-center">Aking mga karanasan</h2>
                 <p class="text-center mb-4">Ang mga pangunahing yugto ng aking karera:</p>
-                <div class="row">
-                    <div class="col-md-4">
+                <div class="row justify-content-center gx-4 gy-4">
+                    <div class="col-md-6">
                         <div class="card shadow-sm">
                             <img src="../img/base107.jpg" class="card-img-top" alt="Initiation à l'aviation">
                             <div class="card-body">
@@ -179,7 +179,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="card shadow-sm">
                             <img src="../img/LFPG-GRD.jpg" class="card-img-top" alt="Initiation en hélicoptère">
                             <div class="card-body">
@@ -189,13 +189,162 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <!-- Initiation en hélicoptère -->
+                    <div class="col-md-6">
                         <div class="card shadow-sm">
                             <img src="../img/initchop.jpg" class="card-img-top" alt="Initiation en hélicoptère">
                             <div class="card-body">
                                 <h5 class="card-title">Introductory flight ng helicopter (Boracay, Philippines)</h5>
                                 <p class="card-text">Boracay, 2022</p>
                                 <p class="card-body">Pinamaneho ang isang helicopter sa maikling paglipad—isang di-malilimutang karanasan na nagpatibay sa aking hilig sa aviation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Internship sa Munisipalidad ng Kalibo -->
+                    <div class="col-md-6">
+                        <div class="card shadow-sm">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/KaliboAklanSeal.jpg" class="card-img-top mx-auto d-block" alt="LGU Kalibo" style="width: 50%; height: auto; margin-top: 25px;">
+                            <div class="card-body">
+                                <h5 class="card-title" id="titleKalibo">Internship sa Munisipalidad ng Kalibo</h5>
+                                <p class="card-text" id="locationKalibo">Kalibo, Pilipinas, Simula noong Abril 28, 2025</p>
+                                <p class="card-body" id="descriptionKalibo">Para sa aking internship sa ikalawang taon ng BUT SD, nagkaroon ako ng pagkakataon na magsagawa ng internship sa Office of the Municipal Planning and Development Coordinator ng LGU Kalibo. Ang internship na ito ay may kinalaman sa pagtulong sa pag-update ng land use plan at pagsusuri ng mga panganib sa klima at mga kalamidad para sa munisipalidad ng Kalibo, sa Pilipinas.</p>
+                                <!-- Website ng Munisipalidad -->
+                                <a href="https://kaliboaklan.gov.ph/" target="_blank" title="Bisitahin ang opisyal na website ng Munisipalidad ng Kalibo">
+                                    <span>Website ng Munisipalidad ng Kalibo</span>
+                                </a><br>
+                                <!-- Button para makita ang higit pang detalye -->
+                                <button class="btn btn-primary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#detailsKalibo" aria-expanded="false" aria-controls="detailsKalibo">
+                                    <span>Tingnan ang higit pang detalye</span>
+                                </button>
+                                <div class="collapse mt-2" id="detailsKalibo">
+                                    <p id="detailsKaliboContent">
+                                        Ang internship na ito ay nagbigay sa akin ng pagkakataon na mag-ambag sa mga proyekto ng urbanisasyon at pamamahala ng mga panganib sa klima, na nagpapalakas ng aking kasanayan sa pagsusuri ng datos at pamamahala ng mga proyekto.
+                                    </p>
+                                    <!-- Internship journal -->
+                                    <div id="journal-buttons" class="mt-3">
+                                        <h6>Journal ng internship:</h6>
+                                        <div class="dropdown"></div>
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="weekDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Pumili ng linggo
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="weekDropdown">
+                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS1Content')">Linggo 1</a></li>
+                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS2Content')">Linggo 2</a></li>
+                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS3Content')">Linggo 3</a></li>
+                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS4Content')">Linggo 4</a></li>
+                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS5Content')">Linggo 5</a></li>
+                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS6Content')">Linggo 6</a></li>
+                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS7Content')">Linggo 7</a></li>
+                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS8Content')">Linggo 8</a></li>
+                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS9Content')">Linggo 9</a></li>
+                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS10Content')">Linggo 10</a></li>
+                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS11Content')">Linggo 11</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <script>
+                                    // Function to show/hide internship journal content by week
+                                    function toggleWeek(weekId) {
+                                        const weeks = ['LGUS1Content', 'LGUS2Content', 'LGUS3Content', 'LGUS4Content', 'LGUS5Content', 'LGUS6Content', 'LGUS7Content', 'LGUS8Content', 'LGUS9Content', 'LGUS10Content', 'LGUS11Content'];
+                                        weeks.forEach(id => {
+                                            const content = document.getElementById(id);
+                                            if (id === weekId) {
+                                                content.classList.toggle('collapse');
+                                            } else {
+                                                content.classList.add('collapse');
+                                            }
+                                        });
+                                    }
+                                    // Initialization: Hide all weeks when the page loads
+                                    window.onload = function() {
+                                        const allWeeks = ['LGUS1Content', 'LGUS2Content', 'LGUS3Content', 'LGUS4Content', 'LGUS5Content', 'LGUS6Content', 'LGUS7Content', 'LGUS8Content', 'LGUS9Content', 'LGUS10Content', 'LGUS11Content'];
+                                        allWeeks.forEach(week => {
+                                            const element = document.getElementById(week);
+                                            if (element) {
+                                                element.classList.add('collapse');  // Hide all weeks on page load
+                                            }
+                                        });
+                                    };
+                                    // Function to show/hide internship journal content by day
+                                    function toggleDay(dayId) {
+                                        const days = ['LGUD1Content', 'LGUD2Content', 'LGUD3Content', 'LGUD4Content', 'LGUD5Content', 'LGUD6Content', 'LGUD7Content', 'LGUD8Content', 'LGUD9Content', 'LGUD10Content'];
+                                        days.forEach(id => {
+                                            const content = document.getElementById(id);
+                                            if (id === dayId) {
+                                                content.classList.toggle('collapse');
+                                            } else {
+                                                content.classList.add('collapse');
+                                            }
+                                        });
+                                    }
+                                </script>
+                                <!-- Internship journal content (Week 1) -->
+                                <div class="collapse" id="LGUS1Content">
+                                    <h7>Linggo 1 (Abril 28, 2025 - Mayo 2, 2025)</h7>
+                                    <p>Noong aking unang linggo, nakilala ko ang team, tinutunan ang mga pasilidad, at nakipag-usap tungkol sa mga layunin ng internship. Humanga ako sa kanilang dedikasyon sa sustainable development.</p>
+                                    <div class="btn-group" role="group" aria-label="Internship journal - Week 1">
+                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD1Content')">Araw 1<br><small>(Abril 28)</small></button>
+                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD2Content')">Araw 2<br><small>(Abril 29)</small></button>
+                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD3Content')">Araw 3<br><small>(Abril 30)</small></button>
+                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD4Content')">Araw 4<br><small>(Mayo 1)</small></button>
+                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD5Content')">Araw 5<br><small>(Mayo 2)</small></button>
+                                    </div>
+                                    <!-- Internship journal content (Day 1 - Week 1) -->
+                                    <div class="collapse" id="LGUD1Content">
+                                        <p>Sa unang araw ng internship (Abril 28, 2025), ako ay tinanggap ng team ng Office of the Municipal Planning and Development Coordinator. Nagkaroon ako ng pagkakataon na makilala ang aking mga katrabaho at maging pamilyar sa mga pasilidad. Pinag-usapan namin ang mga layunin ng internship at ang mga kasalukuyang proyekto.</p>
+                                        <p>Binisita rin namin ang office ng munisipal na pagpaplano, kung saan ako ay nakapag-obserba ng mga aktibidad na kasalukuyang isinasagawa. Humanga ako sa dedikasyon ng team sa sustainable development at pamamahala ng mga panganib sa klima.</p>
+                                        <p>Sa huli ng araw, nakasama ko sila sa isang meeting kung saan tinalakay namin ang mga prayoridad para sa susunod na linggo. Ako'y nasasabik na magsimula sa mga proyektong ito.</p>
+                                    </div>
+                                    <!-- Internship journal content (Day 2 - Week 1) -->
+                                    <div class="collapse" id="LGUD2Content">
+                                        <p>Noong ikalawang araw (Abril 29, 2025), ako ay naging bahagi ng pag-update ng land use plan ng munisipalidad. Nakipagtulungan ako sa team upang suriin ang mga geographic data at matukoy ang mga risk zones. Ginamit namin ang mga tool sa pagmamapa upang makita ang mga impormasyon.</p>
+                                        <p>Sumama rin ako sa mga eksperto sa urban planning upang magdiskusyon tungkol sa mga prinsipyo ng sustainable development at kung paano ito maisasakatuparan sa aming proyekto.</p>
+                                    </div>
+                                    <!-- Internship journal content (Day 3 - Week 1) -->
+                                    <div class="collapse" id="LGUD3Content">
+                                        <p>Noong ikatlong araw (Abril 30, 2025), ako ay nagpatuloy sa pagsusuri ng mga risk zones sa Kalibo gamit ang GIS (Geographic Information System). Pinag-aralan ko kung paano nakakaapekto ang klima sa urbanisasyon at paano ito makakatulong sa pagpaplano ng mga proyekto sa hinaharap.</p>
+                                    </div>
+                                    <!-- Internship journal content (Day 4 - Week 1) -->
+                                    <div class="collapse" id="LGUD4Content">
+                                        <p>Noong ikaapat na araw (Mayo 1, 2025), nakilala ko ang QGIS software upang matutunan kung paano maipapakita ang ilang datos sa mapa ng rehiyon.</p>
+                                        <p>Napansin ko ang kahirapan ng software, lalo na sa paggawa ng mapa at simula ng pag-gawa ng legend.</p>
+                                    </div>
+                                    <!-- Internship journal content (Day 5 - Week 1) -->
+                                    <div class="collapse" id="LGUD5Content">
+                                        <p>Noong ikalimang araw (Mayo 2, 2025), nagsimula kami sa paggawa ng PowerPoint presentation (PPTX) batay sa mga datos na inihanda ng isang statistician.</p>
+                                        <p>Ang datos na ito ay ilalahad sa isang pagpupulong upang mag-coordinate ang lahat ng departamentong pambayan at ang Barangay ng lungsod upang planuhin ang mga sustainable development initiatives para sa darating na linggo.</p>
+                                        <p>Pinayagan akong makipagtulungan sa team upang ayusin ang impormasyon ng malinaw at epektibo para sa presentasyon.</p>
+                                    </div>
+                                </div>
+                                <!-- Internship journal content (Week 2) -->
+                                <div class="collapse" id="LGUS2Content">
+                                    <p>Sa ikalawang linggo, ipagpatuloy ko ang pag-update ng land use plan at nakilahok sa mga pagpupulong ukol sa urban planning. Nag-visit din ako sa mga lokal na sites upang mas maunawaan ang mga hamon ng urban development.</p>
+                                    <div class="btn-group" role="group" aria-label="Internship Journal - Week 2">
+                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD6Content')">Araw 6<br><small>(Mayo 5)</small></button>
+                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD7Content')">Araw 7<br><small>(Mayo 6)</small></button>
+                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD8Content')">Araw 8<br><small>(Mayo 7)</small></button>
+                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD9Content')">Araw 9<br><small>(Mayo 8)</small></button>
+                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD10Content')">Araw 10<br><small>(Mayo 9)</small></button>
+                                    </div>
+                                    <!-- Internship journal content (Day 6 - Week 2) -->
+                                    <div class="collapse" id="LGUD6Content">
+                                        <p>Noong ikaanim na araw (Mayo 5, 2025), nag-visit kami sa ilang sites na may kinalaman sa climate risk management. Namasdan ko ang kasalukuyang imprastruktura at na-assess ang mga hamon ng munisipalidad.</p>
+                                    </div>
+                                    <!-- Internship journal content (Day 7 - Week 2) -->
+                                    <div class="collapse" id="LGUD7Content">
+                                        <p>Noong ikapitong araw (Mayo 6), walang entry ang ginawa para sa araw na ito.</p>
+                                    </div>
+                                    <!-- Internship journal content (Day 8 - Week 2) -->
+                                    <div class="collapse" id="LGUD8Content">
+                                        <p>Noong ikawalong araw (Mayo 7, 2025), natapos ko ang PowerPoint presentation na naglalaman ng mga global data para sa 2022. Mahalaga ang gawaing ito para sa paghahanda para sa pagpupulong na naka-schedule kinabukasan.</p>
+                                        <p>Sinaliksik ko rin ang impormasyon upang matukoy ang mga priority actions na ipapatupad sa mga susunod na buwan at taon, kasama ang team.</p>
+                                    </div>
+                                    <!-- Internship journal content (Day 9 - Week 2) -->
+                                    <div class="collapse" id="LGUD9Content">
+                                        <p>Noong ikasiyam na araw (Mayo 8, 2025), nakilahok ako sa Sectoral Municipality Meeting kung saan iprinisinta ang CBMS 2022 PowerPoint presentation. Ang pagpupulong ay dinaluhan ng mga kinatawan mula sa iba't ibang departamento at Barangay ng munisipalidad.</p>
+                                        <p>Nagkaroon ako ng pagkakataong makita kung paano iniharap at tinalakay ang mga impormasyon mula sa CBMS 2022 at ang mga reaksyon ng mga kalahok. Naitindihan ko ang proseso ng paggawa ng desisyon sa munisipalidad at ang kahalagahan ng data sa paggawa ng mga stratehiya para sa hinaharap.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

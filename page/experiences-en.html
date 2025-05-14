@@ -168,8 +168,8 @@
             <div class="container">
                 <h2 class="text-center">My experiences</h2>
                 <p class="text-center mb-4">The key stages of my career:</p>
-                <div class="row">
-                    <div class="col-md-4">
+                <div class="row justify-content-center gx-4 gy-4">
+                    <div class="col-md-6">
                         <div class="card shadow-sm">
                             <img src="../img/base107.jpg" class="card-img-top" alt="Initiation à l'aviation">
                             <div class="card-body">
@@ -179,7 +179,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="card shadow-sm">
                             <img src="../img/LFPG-GRD.jpg" class="card-img-top" alt="Initiation en hélicoptère">
                             <div class="card-body">
@@ -189,13 +189,166 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <!-- Initiation en hélicoptère -->
+                    <div class="col-md-6">
                         <div class="card shadow-sm">
                             <img src="../img/initchop.jpg" class="card-img-top" alt="Initiation en hélicoptère">
                             <div class="card-body">
                                 <h5 class="card-title">Helicopter introductory flight (Boracay, Philippines)</h5>
                                 <p class="card-text">Boracay, 2022</p>
                                 <p class="card-body">Piloted a helicopter during a short flight—an unforgettable experience that deepened my passion for aviation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Internship at the Municipality of Kalibo -->
+                    <div class="col-md-6">
+                        <div class="card shadow-sm">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/KaliboAklanSeal.jpg" class="card-img-top mx-auto d-block" alt="LGU Kalibo" style="width: 50%;
+                            height: auto;
+                            margin-top: 25px;">
+                            <div class="card-body">
+                                <h5 class="card-title" id="titleKalibo">Internship at the Municipality of Kalibo</h5>
+                                <p class="card-text" id="locationKalibo">Kalibo, Philippines, Ongoing since April 28, 2025</p>
+                                <p class="card-body" id="descriptionKalibo">For my second-year internship in the BUT SD program, I had the opportunity to undertake it at the Office of the Municipal Planning and Development Coordinator LGU Kalibo. This internship involved assisting in updating the land use plan and assessing climate and disaster risks for the municipality of Kalibo, in the Philippines.</p>
+                                <!-- Municipality Website -->
+                                <a href="https://kaliboaklan.gov.ph/" target="_blank" title="Visit the official website of the Municipality of Kalibo">
+                                    <span>Municipality of Kalibo Website</span>
+                                </a><br>
+                                <!-- Button to show more details -->
+                                <button class="btn btn-primary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#detailsKalibo" aria-expanded="false" aria-controls="detailsKalibo">
+                                    <span>See More Details</span>
+                                </button>
+                                <div class="collapse mt-2" id="detailsKalibo">
+                                    <p id="detailsKaliboContent">
+                                        This internship allowed me to contribute to urban planning and climate risk management projects, strengthening my skills in data analysis and project management.
+                                    </p>
+                                    <!-- Internship Journal -->
+                                    <div id="journal-buttons" class="mt-3">
+                                        <h6>Internship Journal:</h6>
+                                        <div class="dropdown"></div>
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="weekDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Select a Week
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="weekDropdown">
+                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS1Content')">Week 1</a></li>
+                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS2Content')">Week 2</a></li>
+                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS3Content')">Week 3</a></li>
+                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS4Content')">Week 4</a></li>
+                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS5Content')">Week 5</a></li>
+                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS6Content')">Week 6</a></li>
+                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS7Content')">Week 7</a></li>
+                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS8Content')">Week 8</a></li>
+                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS9Content')">Week 9</a></li>
+                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS10Content')">Week 10</a></li>
+                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS11Content')">Week 11</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <script>
+                                    // Function to show/hide the internship journal by week
+                                    function toggleWeek(weekId) {
+                                        const weeks = ['LGUS1Content', 'LGUS2Content', 'LGUS3Content', 'LGUS4Content', 'LGUS5Content', 'LGUS6Content', 'LGUS7Content', 'LGUS8Content', 'LGUS9Content', 'LGUS10Content', 'LGUS11Content'];
+                                        weeks.forEach(id => {
+                                            const content = document.getElementById(id);
+                                            if (id === weekId) {
+                                                content.classList.toggle('collapse');
+                                            } else {
+                                                content.classList.add('collapse');
+                                            }
+                                        });
+                                    }
+                                    // Initialization: Hide all weeks when the page loads
+                                    window.onload = function() {
+                                        const allWeeks = ['LGUS1Content', 'LGUS2Content', 'LGUS3Content', 'LGUS4Content', 'LGUS5Content', 'LGUS6Content', 'LGUS7Content', 'LGUS8Content', 'LGUS9Content', 'LGUS10Content', 'LGUS11Content'];
+                                        allWeeks.forEach(week => {
+                                            const element = document.getElementById(week);
+                                            if (element) {
+                                                element.classList.add('collapse');  // Hide all weeks on load
+                                            }
+                                        });
+                                    };
+                                    // Function to show/hide the internship journal by day
+                                    function toggleDay(dayId) {
+                                        const days = ['LGUD1Content', 'LGUD2Content', 'LGUD3Content', 'LGUD4Content', 'LGUD5Content', 'LGUD6Content', 'LGUD7Content', 'LGUD8Content', 'LGUD9Content', 'LGUD10Content'];
+                                        days.forEach(id => {
+                                            const content = document.getElementById(id);
+                                            if (id === dayId) {
+                                                content.classList.toggle('collapse');
+                                            } else {
+                                                content.classList.add('collapse');
+                                            }
+                                        });
+                                    }
+                                </script>
+                                <!-- Internship journal content (Week 1) -->
+                                <div class="collapse" id="LGUS1Content">
+                                    <h7>Week 1 (April 28, 2025 - May 2, 2025)</h7>
+                                    <p>During my first week, I met the team, toured the facilities, and discussed the internship objectives. I was impressed by their commitment to sustainable development.</p>
+                                    <div class="btn-group" role="group" aria-label="Internship Journal - Week 1">
+                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD1Content')">Day 1<br><small>(April 28)</small></button>
+                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD2Content')">Day 2<br><small>(April 29)</small></button>
+                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD3Content')">Day 3<br><small>(April 30)</small></button>
+                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD4Content')">Day 4<br><small>(May 1)</small></button>
+                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD5Content')">Day 5<br><small>(May 2)</small></button>
+                                    </div>
+                                    <!-- Internship journal content (Day 1 - Week 1) -->
+                                    <div class="collapse" id="LGUD1Content">
+                                        <p>On the first day of my internship (April 28, 2025), I was welcomed by the team at the Office of the Municipal Planning and Development Coordinator. I had the chance to meet my colleagues and familiarize myself with the facilities. We discussed the internship objectives and ongoing projects.</p>
+                                        <p>We also toured the municipal planning office, where I observed the various activities taking place. I was impressed by the team's commitment to sustainable development and climate risk management.</p>
+                                        <p>Finally, I attended a team meeting where we discussed priorities for the coming week. I was excited to begin working on the ongoing projects.</p>
+                                    </div>
+                                    <!-- Internship journal content (Day 2 - Week 1) -->
+                                    <div class="collapse" id="LGUD2Content">
+                                        <p>On the second day (April 29, 2025), I got involved in updating the land use plan for the municipality. I worked with the team to analyze geographic data and identify at-risk areas. We used mapping tools to visualize the information.</p>
+                                        <p>I also attended a meeting with representatives from other departments to discuss ongoing projects. It was interesting to see how different services collaborated to achieve common goals.</p>
+                                        <p>At the end of the day, I had the chance to ask questions about the planning process and learn more about the challenges the municipality faces in terms of sustainable development.</p>
+                                    </div>
+                                    <!-- Internship journal content (Day 3 - Week 1) -->
+                                    <div class="collapse" id="LGUD3Content">
+                                        <p>On the third day (April 30, 2025), I started working with the CSPro 8.0 software and conducted some basic data extractions, such as the number of "PWD per Barangay" or the number of "Senior Citizens with and without ID per Barangay".</p>
+                                        <p>These extractions required adjustments in Excel, based on the 2022 report.</p>
+                                    </div>
+                                    <!-- Internship journal content (Day 4 - Week 1) -->
+                                    <div class="collapse" id="LGUD4Content">
+                                        <p>On the fourth day (May 1, 2025), I got acquainted with the QGIS software to explore how certain data could be represented on a map of the region.</p>
+                                        <p>I noticed the complexity of the software, especially when it came to creating the map and starting to work on the legend.</p>
+                                    </div>
+                                    <!-- Internship journal content (Day 5 - Week 1) -->
+                                    <div class="collapse" id="LGUD5Content">
+                                        <p>On the fifth day (May 2, 2025), we began working on a PowerPoint presentation (PPTX) based on data prepared by a statistician.</p>
+                                        <p>This data will be presented during a meeting aimed at coordinating efforts between all municipal departments and the city's "Barangay" to plan sustainable development initiatives for the coming week.</p>
+                                        <p>This task allowed me to collaborate with the team to structure the information clearly and effectively for the presentation.</p>
+                                    </div>
+                                </div>
+                                <!-- Internship journal content (Week 2) -->
+                                <div class="collapse" id="LGUS2Content">
+                                    <p>During the second week, I continued updating the land use plan and participated in urban planning meetings. I also visited local sites to better understand the challenges of urban development.</p>
+                                    <div class="btn-group" role="group" aria-label="Internship Journal - Week 2">
+                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD6Content')">Day 6<br><small>(May 5)</small></button>
+                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD7Content')">Day 7<br><small>(May 6)</small></button>
+                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD8Content')">Day 8<br><small>(May 7)</small></button>
+                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD9Content')">Day 9<br><small>(May 8)</small></button>
+                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD10Content')">Day 10<br><small>(May 9)</small></button>
+                                    </div>
+                                    <!-- Internship journal content (Day 6 - Week 2) -->
+                                    <div class="collapse" id="LGUD6Content">
+                                        <p>On the sixth day (May 5, 2025), we visited several sites of interest for climate risk management. I was able to observe the existing infrastructure and assess the challenges the municipality faces.</p>
+                                    </div>
+                                    <!-- Internship journal content (Day 7 - Week 2) -->
+                                    <div class="collapse" id="LGUD7Content">
+                                        <p>On the seventh day (May 6), no journal entry was made for this day.</p>
+                                    </div>
+                                    <!-- Internship journal content (Day 8 - Week 2) -->
+                                    <div class="collapse" id="LGUD8Content">
+                                        <p>On the eighth day (May 7), I finalized the PowerPoint presentation containing the global data for 2022. This task was crucial for preparing for the meeting scheduled the next day.</p>
+                                        <p>I also analyzed the information to identify the priority actions to be implemented in the coming months and years, in collaboration with the team.</p>
+                                    </div>
+                                    <!-- Internship journal content (Day 9 - Week 2) -->
+                                    <div class="collapse" id="LGUD9Content">
+                                        <p>On the ninth day (May 8, 2025), I participated in the Sectoral Municipality Meeting where the CBMS 2022 PowerPoint presentation was held. This meeting brought together representatives from various departments and the "Barangay" of the municipality.</p>
+                                        <p>I had the opportunity to observe how the CBMS 2022 information was presented and discussed, as well as the reactions from the participants. This allowed me to better understand the decision-making process within the municipality and the importance of data in strategic planning.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
