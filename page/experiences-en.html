@@ -194,7 +194,14 @@
                         <div class="card shadow-sm">
                             <img src="../img/initchop.jpg" class="card-img-top" alt="Initiation en hélicoptère">
                             <div class="card-body">
-                                <h5 class="card-title">Helicopter introductory flight (Boracay, Philippines)</h5>
+                                <h5 class="card-title">Helicopter introductory flight (Boracay, Philippines)
+                                    <!-- Lien YTB   -->
+                                    <a href="https://youtu.be/KWckAXoT1hc?si=vLNapumlEskcdj6O" target="_blank" title="Watch the introductory flight video">
+                                        <span>
+                                            <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_72/f_auto/q_auto/v1703069376/icones-cv/rounded/reseaux-sociaux/icone-cv-logo-youtube-rouge_wuupxd" alt="Introductory flight video" width="25" height="25" class="d-inline-block align-text-top">
+                                        </span>
+                                    </a>
+                                </h5>
                                 <p class="card-text">Boracay, 2022</p>
                                 <p class="card-body">Piloted a helicopter during a short flight—an unforgettable experience that deepened my passion for aviation.</p>
                             </div>
@@ -203,11 +210,16 @@
                     <!-- Internship at the Municipality of Kalibo -->
                     <div class="col-md-6">
                         <div class="card shadow-sm">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/KaliboAklanSeal.jpg" class="card-img-top mx-auto d-block" alt="LGU Kalibo" style="width: 50%;
-                            height: auto;
-                            margin-top: 25px;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/KaliboAklanSeal.jpg" class="card-img-top mx-auto d-block" alt="LGU Kalibo" style="width: 50%; height: auto;  margin-top: 25px;">
                             <div class="card-body">
-                                <h5 class="card-title" id="titleKalibo">Internship at the Municipality of Kalibo</h5>
+                                <h5 class="card-title" id="titleKalibo">Internship at the Municipality of Kalibo (OMPDC)
+                                    <!-- Convention de stage signer -->
+                                    <a href="../docs/Internship Agreement LEO UNITE.pdf" target="_blank" title="Download the internship agreement">
+                                        <span>
+                                            <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_72/f_auto/q_auto/v1703077714/icones-cv/rounded/rubriques/icone-cv-formation_ibiywg" alt="Internship Agreement" width="25" height="25" class="d-inline-block align-text-top">
+                                        </span>
+                                    </a>
+                                </h5>
                                 <p class="card-text" id="locationKalibo">Kalibo, Philippines, Ongoing since April 28, 2025</p>
                                 <p class="card-body" id="descriptionKalibo">For my second-year internship in the BUT SD program, I had the opportunity to undertake it at the Office of the Municipal Planning and Development Coordinator LGU Kalibo. This internship involved assisting in updating the land use plan and assessing climate and disaster risks for the municipality of Kalibo, in the Philippines.</p>
                                 <!-- Municipality Website -->
@@ -216,7 +228,7 @@
                                 </a><br>
                                 <!-- Button to show more details -->
                                 <button class="btn btn-primary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#detailsKalibo" aria-expanded="false" aria-controls="detailsKalibo">
-                                    <span>See More Details</span>
+                                    <span>See more details</span>
                                 </button>
                                 <div class="collapse mt-2" id="detailsKalibo">
                                     <p id="detailsKaliboContent">
@@ -226,128 +238,424 @@
                                     <div id="journal-buttons" class="mt-3">
                                         <h6>Internship Journal:</h6>
                                         <div class="dropdown"></div>
-                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="weekDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Select a Week
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="weekDropdown">
-                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS1Content')">Week 1</a></li>
-                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS2Content')">Week 2</a></li>
-                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS3Content')">Week 3</a></li>
-                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS4Content')">Week 4</a></li>
-                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS5Content')">Week 5</a></li>
-                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS6Content')">Week 6</a></li>
-                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS7Content')">Week 7</a></li>
-                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS8Content')">Week 8</a></li>
-                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS9Content')">Week 9</a></li>
-                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS10Content')">Week 10</a></li>
-                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS11Content')">Week 11</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <script>
-                                    // Function to show/hide the internship journal by week
-                                    function toggleWeek(weekId) {
-                                        const weeks = ['LGUS1Content', 'LGUS2Content', 'LGUS3Content', 'LGUS4Content', 'LGUS5Content', 'LGUS6Content', 'LGUS7Content', 'LGUS8Content', 'LGUS9Content', 'LGUS10Content', 'LGUS11Content'];
-                                        weeks.forEach(id => {
-                                            const content = document.getElementById(id);
-                                            if (id === weekId) {
-                                                content.classList.toggle('collapse');
-                                            } else {
-                                                content.classList.add('collapse');
-                                            }
-                                        });
-                                    }
-                                    // Initialization: Hide all weeks when the page loads
-                                    window.onload = function() {
-                                        const allWeeks = ['LGUS1Content', 'LGUS2Content', 'LGUS3Content', 'LGUS4Content', 'LGUS5Content', 'LGUS6Content', 'LGUS7Content', 'LGUS8Content', 'LGUS9Content', 'LGUS10Content', 'LGUS11Content'];
-                                        allWeeks.forEach(week => {
-                                            const element = document.getElementById(week);
-                                            if (element) {
-                                                element.classList.add('collapse');  // Hide all weeks on load
-                                            }
-                                        });
-                                    };
-                                    // Function to show/hide the internship journal by day
-                                    function toggleDay(dayId) {
-                                        const days = ['LGUD1Content', 'LGUD2Content', 'LGUD3Content', 'LGUD4Content', 'LGUD5Content', 'LGUD6Content', 'LGUD7Content', 'LGUD8Content', 'LGUD9Content', 'LGUD10Content'];
-                                        days.forEach(id => {
-                                            const content = document.getElementById(id);
-                                            if (id === dayId) {
-                                                content.classList.toggle('collapse');
-                                            } else {
-                                                content.classList.add('collapse');
-                                            }
-                                        });
-                                    }
-                                </script>
-                                <!-- Internship journal content (Week 1) -->
-                                <div class="collapse" id="LGUS1Content">
-                                    <h7>Week 1 (April 28, 2025 - May 2, 2025)</h7>
-                                    <p>During my first week, I met the team, toured the facilities, and discussed the internship objectives. I was impressed by their commitment to sustainable development.</p>
-                                    <div class="btn-group" role="group" aria-label="Internship Journal - Week 1">
-                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD1Content')">Day 1<br><small>(April 28)</small></button>
-                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD2Content')">Day 2<br><small>(April 29)</small></button>
-                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD3Content')">Day 3<br><small>(April 30)</small></button>
-                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD4Content')">Day 4<br><small>(May 1)</small></button>
-                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD5Content')">Day 5<br><small>(May 2)</small></button>
-                                    </div>
-                                    <!-- Internship journal content (Day 1 - Week 1) -->
-                                    <div class="collapse" id="LGUD1Content">
-                                        <p>On the first day of my internship (April 28, 2025), I was welcomed by the team at the Office of the Municipal Planning and Development Coordinator. I had the chance to meet my colleagues and familiarize myself with the facilities. We discussed the internship objectives and ongoing projects.</p>
-                                        <p>We also toured the municipal planning office, where I observed the various activities taking place. I was impressed by the team's commitment to sustainable development and climate risk management.</p>
-                                        <p>Finally, I attended a team meeting where we discussed priorities for the coming week. I was excited to begin working on the ongoing projects.</p>
-                                    </div>
-                                    <!-- Internship journal content (Day 2 - Week 1) -->
-                                    <div class="collapse" id="LGUD2Content">
-                                        <p>On the second day (April 29, 2025), I got involved in updating the land use plan for the municipality. I worked with the team to analyze geographic data and identify at-risk areas. We used mapping tools to visualize the information.</p>
-                                        <p>I also attended a meeting with representatives from other departments to discuss ongoing projects. It was interesting to see how different services collaborated to achieve common goals.</p>
-                                        <p>At the end of the day, I had the chance to ask questions about the planning process and learn more about the challenges the municipality faces in terms of sustainable development.</p>
-                                    </div>
-                                    <!-- Internship journal content (Day 3 - Week 1) -->
-                                    <div class="collapse" id="LGUD3Content">
-                                        <p>On the third day (April 30, 2025), I started working with the CSPro 8.0 software and conducted some basic data extractions, such as the number of "PWD per Barangay" or the number of "Senior Citizens with and without ID per Barangay".</p>
-                                        <p>These extractions required adjustments in Excel, based on the 2022 report.</p>
-                                    </div>
-                                    <!-- Internship journal content (Day 4 - Week 1) -->
-                                    <div class="collapse" id="LGUD4Content">
-                                        <p>On the fourth day (May 1, 2025), I got acquainted with the QGIS software to explore how certain data could be represented on a map of the region.</p>
-                                        <p>I noticed the complexity of the software, especially when it came to creating the map and starting to work on the legend.</p>
-                                    </div>
-                                    <!-- Internship journal content (Day 5 - Week 1) -->
-                                    <div class="collapse" id="LGUD5Content">
-                                        <p>On the fifth day (May 2, 2025), we began working on a PowerPoint presentation (PPTX) based on data prepared by a statistician.</p>
-                                        <p>This data will be presented during a meeting aimed at coordinating efforts between all municipal departments and the city's "Barangay" to plan sustainable development initiatives for the coming week.</p>
-                                        <p>This task allowed me to collaborate with the team to structure the information clearly and effectively for the presentation.</p>
-                                    </div>
-                                </div>
-                                <!-- Internship journal content (Week 2) -->
-                                <div class="collapse" id="LGUS2Content">
-                                    <p>During the second week, I continued updating the land use plan and participated in urban planning meetings. I also visited local sites to better understand the challenges of urban development.</p>
-                                    <div class="btn-group" role="group" aria-label="Internship Journal - Week 2">
-                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD6Content')">Day 6<br><small>(May 5)</small></button>
-                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD7Content')">Day 7<br><small>(May 6)</small></button>
-                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD8Content')">Day 8<br><small>(May 7)</small></button>
-                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD9Content')">Day 9<br><small>(May 8)</small></button>
-                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD10Content')">Day 10<br><small>(May 9)</small></button>
-                                    </div>
-                                    <!-- Internship journal content (Day 6 - Week 2) -->
-                                    <div class="collapse" id="LGUD6Content">
-                                        <p>On the sixth day (May 5, 2025), we visited several sites of interest for climate risk management. I was able to observe the existing infrastructure and assess the challenges the municipality faces.</p>
-                                    </div>
-                                    <!-- Internship journal content (Day 7 - Week 2) -->
-                                    <div class="collapse" id="LGUD7Content">
-                                        <p>On the seventh day (May 6), no journal entry was made for this day.</p>
-                                    </div>
-                                    <!-- Internship journal content (Day 8 - Week 2) -->
-                                    <div class="collapse" id="LGUD8Content">
-                                        <p>On the eighth day (May 7), I finalized the PowerPoint presentation containing the global data for 2022. This task was crucial for preparing for the meeting scheduled the next day.</p>
-                                        <p>I also analyzed the information to identify the priority actions to be implemented in the coming months and years, in collaboration with the team.</p>
-                                    </div>
-                                    <!-- Internship journal content (Day 9 - Week 2) -->
-                                    <div class="collapse" id="LGUD9Content">
-                                        <p>On the ninth day (May 8, 2025), I participated in the Sectoral Municipality Meeting where the CBMS 2022 PowerPoint presentation was held. This meeting brought together representatives from various departments and the "Barangay" of the municipality.</p>
-                                        <p>I had the opportunity to observe how the CBMS 2022 information was presented and discussed, as well as the reactions from the participants. This allowed me to better understand the decision-making process within the municipality and the importance of data in strategic planning.</p>
-                                    </div>
+                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="weekDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Select a week
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="weekDropdown">
+                                                <li><a class="dropdown-item" onclick="toggleWeek('LGUS1Content')">Week 1 (April 28 - May 2)</a></li>
+                                                <li><a class="dropdown-item" onclick="toggleWeek('LGUS2Content')">Week 2 (May 5 - 9)</a></li>
+                                                <li><a class="dropdown-item" onclick="toggleWeek('LGUS3Content')">Week 3 (May 12 - 16)</a></li>
+                                                <li><a class="dropdown-item" onclick="toggleWeek('LGUS4Content')">Week 4 (May 19 - 23)</a></li>
+                                                <li><a class="dropdown-item" onclick="toggleWeek('LGUS5Content')">Week 5 (May 26 - 30)</a></li>
+                                                <li><a class="dropdown-item" onclick="toggleWeek('LGUS6Content')">Week 6 (June 2 - 6)</a></li>
+                                                <li><a class="dropdown-item" onclick="toggleWeek('LGUS7Content')">Week 7 (June 9 - 13)</a></li>
+                                                <li><a class="dropdown-item" onclick="toggleWeek('LGUS8Content')">Week 8 (June 16 - 20)</a></li>
+                                                <li><a class="dropdown-item" onclick="toggleWeek('LGUS9Content')">Week 9 (June 23 - 27)</a></li>
+                                                <li><a class="dropdown-item" onclick="toggleWeek('LGUS10Content')">Week 10 (June 30 - July 4)</a></li>
+                                                <li><a class="dropdown-item" onclick="toggleWeek('LGUS11Content')">Week 11 (July 7 - 11)</a></li>
+                                            </ul>
+                                            <!-- Week 1 Journal Content -->
+                                            <div class="collapse" id="LGUS1Content">
+                                                <h6>Week 1 (April 28, 2025 - May 2, 2025)</h6>
+                                                <p>During my first week, I met the team, discovered the facilities, and discussed the internship objectives. I was impressed by their commitment to sustainable development.</p>
+                                                <div class="btn-group" role="group" aria-label="Internship Journal - Week 1">
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD1Content')">Day 1<br><small>(April 28)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD2Content')">Day 2<br><small>(April 29)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD3Content')">Day 3<br><small>(April 30)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD4Content')">Day 4<br><small>(May 1)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD5Content')">Day 5<br><small>(May 2)</small></button>
+                                                </div>
+                                                <!-- Day 1 Journal Content -->
+                                                <div class="collapse" id="LGUD1Content">
+                                                    <p>On the first day of my internship (April 28, 2025), I was welcomed by the Office of the Municipal Planning and Development Coordinator team. I had the opportunity to meet my colleagues and get familiar with the facilities. We discussed the internship objectives and ongoing projects.</p>
+                                                    <p>We also visited the municipal planning office, where I observed various ongoing activities. I was impressed by the team's commitment to sustainable development and climate risk management.</p>
+                                                    <p>Finally, I participated in a team meeting where we discussed the priorities for the coming week. I was excited to start working on the ongoing projects.</p>
+                                                </div>
+                                                <!-- Day 2 Journal Content -->
+                                                <div class="collapse" id="LGUD2Content">
+                                                    <p>On the second day (April 29, 2025), I was involved in updating the municipality's land use plan. I worked with the team to analyze geographic data and identify risk areas. We used mapping tools to visualize the information.</p>
+                                                    <p>I also attended a meeting with representatives from other departments to discuss ongoing projects. It was interesting to see how different services collaborated to achieve common goals.</p>
+                                                    <p>At the end of the day, I had the opportunity to ask questions about the planning process and learn more about the challenges the municipality faces regarding sustainable development.</p>
+                                                </div>
+                                                <!-- Day 3 Journal Content -->
+                                                <div class="collapse" id="LGUD3Content">
+                                                    <p>On the third day (April 30, 2025), I started using CSPro 8.0 software and performed simple data extractions, such as the number of "PWD per Barangay" or "Senior Citizen with and without ID per Barangay".</p>
+                                                    <p>These extractions required adjustments in Excel, based on the 2022 report.</p>
+                                                </div>
+                                                <!-- Day 4 Journal Content -->
+                                                <div class="collapse" id="LGUD4Content">
+                                                    <p>On the fourth day (May 1, 2025), I learned about QGIS software to explore how some data could be represented on a map of the region.</p>
+                                                    <p>I noticed the software's complexity, especially when creating the map and starting the legend.</p>
+                                                </div>
+                                                <!-- Day 5 Journal Content -->
+                                                <div class="collapse" id="LGUD5Content">
+                                                    <p>On the fifth day (May 2, 2025), we started working on a PowerPoint presentation (PPTX) based on data prepared by a statistician.</p>
+                                                    <p>This data will be presented at a meeting to coordinate efforts between all municipal departments and the city's Barangays, to plan sustainable development initiatives for the next week.</p>
+                                                    <p>This task allowed me to collaborate with the team to structure the information clearly and effectively for presentation.</p>
+                                                </div>
+                                            </div>
+                                            <!-- Week 2 Journal Content -->
+                                            <div class="collapse" id="LGUS2Content">
+                                                <h6>Week 2 (May 5, 2025 - May 9, 2025)</h6>
+                                                <p>During the second week, I continued updating the land use plan and participated in urban planning meetings. I also visited local sites to better understand urban development challenges.</p>
+                                                <div class="btn-group" role="group" aria-label="Internship Journal - Week 2">
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD6Content')">Day 6<br><small>(May 5)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD7Content')">Day 7<br><small>(May 6)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD8Content')">Day 8<br><small>(May 7)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD9Content')">Day 9<br><small>(May 8)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD10Content')">Day 10<br><small>(May 9)</small></button>
+                                                </div>
+                                                <!-- Day 6 Journal Content -->
+                                                <div class="collapse" id="LGUD6Content">
+                                                    <p>On the sixth day (May 5, 2025), we visited several sites of interest for climate risk management. I observed the existing infrastructure and assessed the challenges faced by the municipality.</p>
+                                                </div>
+                                                <!-- Day 7 Journal Content -->
+                                                <div class="collapse" id="LGUD7Content">
+                                                    <p>On the seventh day, May 6, no journal was written for that day.</p>
+                                                </div>
+                                                <!-- Day 8 Journal Content -->
+                                                <div class="collapse" id="LGUD8Content">
+                                                    <p>On the eighth day, May 7, I finalized the PowerPoint presentation containing the 2022 global data. This task was essential to prepare for the meeting scheduled for the next day.</p>
+                                                    <p>I also analyzed the information to identify priority actions to implement in the coming months and years, in collaboration with the team.</p>
+                                                </div>
+                                                <!-- Day 9 Journal Content -->
+                                                <div class="collapse" id="LGUD9Content">
+                                                    <p>On the ninth day, May 8, I participated in the Sectoral Municipality Meeting where the CBMS 2022 PPTX was presented. This meeting brought together representatives from different departments and the municipality's Barangays.</p>
+                                                    <p>I observed how the CBMS 2022 information was presented and discussed, as well as the participants' reactions. This helped me better understand the decision-making process within the municipality and the importance of data in strategic planning.</p>
+                                                </div>
+                                                <!-- Day 10 Journal Content -->
+                                                <div class="collapse" id="LGUD10Content">
+                                                    <p>On the tenth day, May 9, I was involved in preparing the follow-up meeting after the CBMS 2022 presentation. I helped compile participants' feedback and identify next steps to implement the recommendations from the meeting.</p>
+                                                    <p>This experience showed me how data can influence policy decisions and how collaboration between departments is essential to achieve sustainable development goals.</p>
+                                                </div>
+                                            </div>
+                                            <!-- Week 3 Journal Content -->
+                                            <div class="collapse" id="LGUS3Content">
+                                                <h6>Week 3 (May 12, 2025 - May 16, 2025)</h6>
+                                                <p>Coming in the next days.</p>
+                                                <div class="btn-group" role="group" aria-label="Internship Journal - Week 3">
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD11Content')">Day 11<br><small>(May 12)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD12Content')">Day 12<br><small>(May 13)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD13Content')">Day 13<br><small>(May 14)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD14Content')">Day 14<br><small>(May 15)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD15Content')">Day 15<br><small>(May 16)</small></button>
+                                                </div>
+                                                <!-- Day 11 Journal Content -->
+                                                <div class="collapse" id="LGUD11Content">
+                                                    <p>Content coming soon for May 12, 2025.</p>
+                                                </div>
+                                                <!-- Day 12 Journal Content -->
+                                                <div class="collapse" id="LGUD12Content">
+                                                    <p>Content coming soon for May 13, 2025.</p>
+                                                </div>
+                                                <!-- Day 13 Journal Content -->
+                                                <div class="collapse" id="LGUD13Content">
+                                                    <p>Content coming soon for May 14, 2025.</p>
+                                                </div>
+                                                <!-- Day 14 Journal Content -->
+                                                <div class="collapse" id="LGUD14Content">
+                                                    <p>Content coming soon for May 15, 2025.</p>
+                                                </div>
+                                                <!-- Day 15 Journal Content -->
+                                                <div class="collapse" id="LGUD15Content">
+                                                    <p>Content coming soon for May 16, 2025.</p>
+                                                </div>
+                                            </div>
+                                            <!-- Week 4 Journal Content -->
+                                            <div class="collapse" id="LGUS4Content">
+                                                <h6>Week 4 (May 19, 2025 - May 23, 2025)</h6>
+                                                <p>Coming in the next days.</p>
+                                                <div class="btn-group" role="group" aria-label="Internship Journal - Week 4">
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD16Content')">Day 16<br><small>(May 19)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD17Content')">Day 17<br><small>(May 20)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD18Content')">Day 18<br><small>(May 21)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD19Content')">Day 19<br><small>(May 22)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD20Content')">Day 20<br><small>(May 23)</small></button>
+                                                </div>
+                                                <!-- Day 16 Journal Content -->
+                                                <div class="collapse" id="LGUD16Content">
+                                                    <p>Content coming soon for May 19, 2025.</p>
+                                                </div>
+                                                <!-- Day 17 Journal Content -->
+                                                <div class="collapse" id="LGUD17Content">
+                                                    <p>Content coming soon for May 20, 2025.</p>
+                                                </div>
+                                                <!-- Day 18 Journal Content -->
+                                                <div class="collapse" id="LGUD18Content">
+                                                    <p>Content coming soon for May 21, 2025.</p>
+                                                </div>
+                                                <!-- Day 19 Journal Content -->
+                                                <div class="collapse" id="LGUD19Content">
+                                                    <p>Content coming soon for May 22, 2025.</p>
+                                                </div>
+                                                <!-- Day 20 Journal Content -->
+                                                <div class="collapse" id="LGUD20Content">
+                                                    <p>Content coming soon for May 23, 2025.</p>
+                                                </div>
+                                            </div>
+                                            <!-- Week 5 Journal Content -->
+                                            <div class="collapse" id="LGUS5Content">
+                                                <h6>Week 5 (May 26, 2025 - May 30, 2025)</h6>
+                                                <p>Coming in the next days.</p>
+                                                <div class="btn-group" role="group" aria-label="Internship Journal - Week 5">
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD21Content')">Day 21<br><small>(May 26)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD22Content')">Day 22<br><small>(May 27)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD23Content')">Day 23<br><small>(May 28)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD24Content')">Day 24<br><small>(May 29)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD25Content')">Day 25<br><small>(May 30)</small></button>
+                                                </div>
+                                                <!-- Day 21 Journal Content -->
+                                                <div class="collapse" id="LGUD21Content">
+                                                    <p>Content coming soon for May 26, 2025.</p>
+                                                </div>
+                                                <!-- Day 22 Journal Content -->
+                                                <div class="collapse" id="LGUD22Content">
+                                                    <p>Content coming soon for May 27, 2025.</p>
+                                                </div>
+                                                <!-- Day 23 Journal Content -->
+                                                <div class="collapse" id="LGUD23Content">
+                                                    <p>Content coming soon for May 28, 2025.</p>
+                                                </div>
+                                                <!-- Day 24 Journal Content -->
+                                                <div class="collapse" id="LGUD24Content">
+                                                    <p>Content coming soon for May 29, 2025.</p>
+                                                </div>
+                                                <!-- Day 25 Journal Content -->
+                                                <div class="collapse" id="LGUD25Content">
+                                                    <p>Content coming soon for May 30, 2025.</p>
+                                                </div>
+                                            </div>
+                                            <!-- Week 6 Journal Content -->
+                                            <div class="collapse" id="LGUS6Content">
+                                                <h6>Week 6 (June 2, 2025 - June 6, 2025)</h6>
+                                                <p>Coming in the next days.</p>
+                                                <div class="btn-group" role="group" aria-label="Internship Journal - Week 6">
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD26Content')">Day 26<br><small>(June 2)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD27Content')">Day 27<br><small>(June 3)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD28Content')">Day 28<br><small>(June 4)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD29Content')">Day 29<br><small>(June 5)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD30Content')">Day 30<br><small>(June 6)</small></button>
+                                                </div>
+                                                <!-- Day 26 Journal Content -->
+                                                <div class="collapse" id="LGUD26Content">
+                                                    <p>Content coming soon for June 2, 2025.</p>
+                                                </div>
+                                                <!-- Day 27 Journal Content -->
+                                                <div class="collapse" id="LGUD27Content">
+                                                    <p>Content coming soon for June 3, 2025.</p>
+                                                </div>
+                                                <!-- Day 28 Journal Content -->
+                                                <div class="collapse" id="LGUD28Content">
+                                                    <p>Content coming soon for June 4, 2025.</p>
+                                                </div>
+                                                <!-- Day 29 Journal Content -->
+                                                <div class="collapse" id="LGUD29Content">
+                                                    <p>Content coming soon for June 5, 2025.</p>
+                                                </div>
+                                                <!-- Day 30 Journal Content -->
+                                                <div class="collapse" id="LGUD30Content">
+                                                    <p>Content coming soon for June 6, 2025.</p>
+                                                </div>
+                                            </div>
+                                            <!-- Week
+                                            <div class="collapse" id="LGUS7Content">
+                                                <h6>Semaine 7 (9 Juin 2025 - 13 Juin 2025)</h6>
+                                                <p>Dans les prochains jours.</p>
+                                                <div class="btn-group" role="group" aria-label="Journal de stage - Semaine 7">
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD31Content')">Jour 31<br><small>(9 Juin)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD32Content')">Jour 32<br><small>(10 Juin)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD33Content')">Jour 33<br><small>(11 Juin)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD34Content')">Jour 34<br><small>(12 Juin)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD35Content')">Jour 35<br><small>(13 Juin)</small></button>
+                                                </div>
+                                                <!-- Contenu du journal de stage (Jour 31 - Semaine 7) -->
+                                                <div class="collapse" id="LGUD31Content">
+                                                    <p>Contenu à venir pour le 9 Juin 2025.</p>
+                                                </div>
+                                                <!-- Contenu du journal de stage (Jour 32 - Semaine 7) -->
+                                                <div class="collapse" id="LGUD32Content">
+                                                    <p>Contenu à venir pour le 10 Juin 2025.</p>
+                                                </div>
+                                                <!-- Contenu du journal de stage (Jour 33 - Semaine 7) -->
+                                                <div class="collapse" id="LGUD33Content">
+                                                    <p>Contenu à venir pour le 11 Juin 2025.</p>
+                                                </div>
+                                                <!-- Contenu du journal de stage (Jour 34 - Semaine 7) -->
+                                                <div class="collapse" id="LGUD34Content">
+                                                    <p>Contenu à venir pour le 12 Juin 2025.</p>
+                                                </div>
+                                                <!-- Contenu du journal de stage (Jour 35 - Semaine 7) -->
+                                                <div class="collapse" id="LGUD35Content">
+                                                    <p>Contenu à venir pour le 13 Juin 2025.</p>
+                                                </div>
+                                            </div>
+                                            <!-- Contenu du journal de stage (Semaine 8) -->
+                                            <div class="collapse" id="LGUS8Content">
+                                                <h6>Semaine 8 (16 Juin 2025 - 20 Juin 2025)</h6>
+                                                <p>Dans les prochains jours.</p>
+                                                <div class="btn-group" role="group" aria-label="Journal de stage - Semaine 8">
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD36Content')">Jour 36<br><small>(16 Juin)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD37Content')">Jour 37<br><small>(17 Juin)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD38Content')">Jour 38<br><small>(18 Juin)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD39Content')">Jour 39<br><small>(19 Juin)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD40Content')">Jour 40<br><small>(20 Juin)</small></button>
+                                                </div>
+                                                <!-- Contenu du journal de stage (Jour 36 - Semaine 8) -->
+                                                <div class="collapse" id="LGUD36Content">
+                                                    <p>Contenu à venir pour le 16 Juin 2025.</p>
+                                                </div>
+                                                <!-- Contenu du journal de stage (Jour 37 - Semaine 8) -->
+                                                <div class="collapse" id="LGUD37Content">
+                                                    <p>Contenu à venir pour le 17 Juin 2025.</p>
+                                                </div>
+                                                <!-- Contenu du journal de stage (Jour 38 - Semaine 8) -->
+                                                <div class="collapse" id="LGUD38Content">
+                                                    <p>Contenu à venir pour le 18 Juin 2025.</p>
+                                                </div>
+                                                <!-- Contenu du journal de stage (Jour 39 - Semaine 8) -->
+                                                <div class="collapse" id="LGUD39Content">
+                                                    <p>Contenu à venir pour le 19 Juin 2025.</p>
+                                                </div>
+                                                <!-- Contenu du journal de stage (Jour 40 - Semaine 8) -->
+                                                <div class="collapse" id="LGUD40Content">
+                                                    <p>Contenu à venir pour le 20 Juin 2025.</p>
+                                                </div>
+                                            </div>
+                                            <!-- Contenu du journal de stage (Semaine 9) -->
+                                            <div class="collapse" id="LGUS9Content">
+                                                <h6>Semaine 9 (23 Juin 2025 - 27 Juin 2025)</h6>
+                                                <p>Dans les prochains jours.</p>
+                                                <div class="btn-group" role="group" aria-label="Journal de stage - Semaine 9">
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD41Content')">Jour 41<br><small>(23 Juin)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD42Content')">Jour 42<br><small>(24 Juin)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD43Content')">Jour 43<br><small>(25 Juin)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD44Content')">Jour 44<br><small>(26 Juin)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD45Content')">Jour 45<br><small>(27 Juin)</small></button>
+                                                </div>
+                                                <!-- Contenu du journal de stage (Jour 41 - Semaine 9) -->
+                                                <div class="collapse" id="LGUD41Content">
+                                                    <p>Contenu à venir pour le 23 Juin 2025.</p>
+                                                </div>
+                                                <!-- Contenu du journal de stage (Jour 42 - Semaine 9) -->
+                                                <div class="collapse" id="LGUD42Content">
+                                                    <p>Contenu à venir pour le 24 Juin 2025.</p>
+                                                </div>
+                                                <!-- Contenu du journal de stage (Jour 43 - Semaine 9) -->
+                                                <div class="collapse" id="LGUD43Content">
+                                                    <p>Contenu à venir pour le 25 Juin 2025.</p>
+                                                </div>
+                                                <!-- Contenu du journal de stage (Jour 44 - Semaine 9) -->
+                                                <div class="collapse" id="LGUD44Content">
+                                                    <p>Contenu à venir pour le 26 Juin 2025.</p>
+                                                </div>
+                                                <!-- Contenu du journal de stage (Jour 45 - Semaine 9) -->
+                                                <div class="collapse" id="LGUD45Content">
+                                                    <p>Contenu à venir pour le 27 Juin 2025.</p>
+                                                </div>
+                                            </div>
+                                            <!-- Contenu du journal de stage (Semaine 10) -->
+                                            <div class="collapse" id="LGUS10Content">
+                                                <h6>Semaine 10 (30 Juin 2025 - 4 Juillet 2025)</h6>
+                                                <p>Dans les prochains jours.</p>
+                                                <div class="btn-group" role="group" aria-label="Journal de stage - Semaine 10">
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD46Content')">Jour 46<br><small>(30 Juin)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD47Content')">Jour 47<br><small>(1 Juillet)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD48Content')">Jour 48<br><small>(2 Juillet)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD49Content')">Jour 49<br><small>(3 Juillet)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD50Content')">Jour 50<br><small>(4 Juillet)</small></button>
+                                                </div>
+                                                <!-- Contenu du journal de stage (Jour 46 - Semaine 10) -->
+                                                <div class="collapse" id="LGUD46Content">
+                                                    <p>Contenu à venir pour le 30 Juin 2025.</p>
+                                                </div>
+                                                <!-- Contenu du journal de stage (Jour 47 - Semaine 10) -->
+                                                <div class="collapse" id="LGUD47Content">
+                                                    <p>Contenu à venir pour le 1 Juillet 2025.</p>
+                                                </div>
+                                                <!-- Contenu du journal de stage (Jour 48 - Semaine 10) -->
+                                                <div class="collapse" id="LGUD48Content">
+                                                    <p>Contenu à venir pour le 2 Juillet 2025.</p>
+                                                </div>
+                                                <!-- Contenu du journal de stage (Jour 49 - Semaine 10) -->
+                                                <div class="collapse" id="LGUD49Content">
+                                                    <p>Contenu à venir pour le 3 Juillet 2025.</p>
+                                                </div>
+                                                <!-- Contenu du journal de stage (Jour 50 - Semaine 10) -->
+                                                <div class="collapse" id="LGUD50Content">
+                                                    <p>Contenu à venir pour le 4 Juillet 2025.</p>
+                                                </div>
+                                            </div>
+                                            <!-- Contenu du journal de stage (Semaine 11) -->
+                                            <div class="collapse" id="LGUS11Content">
+                                                <h6>Semaine 11 (7 Juillet 2025 - 11 Juillet 2025)</h6>
+                                                <p>Dans les prochains jours.</p>
+                                                <div class="btn-group" role="group" aria-label="Journal de stage - Semaine 11">
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD51Content')">Jour 51<br><small>(7 Juillet)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD52Content')">Jour 52<br><small>(8 Juillet)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD53Content')">Jour 53<br><small>(9 Juillet)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD54Content')">Jour 54<br><small>(10 Juillet)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD55Content')">Jour 55<br><small>(11 Juillet)</small></button>
+                                                </div>
+                                                <!-- Contenu du journal de stage (Jour 51 - Semaine 11) -->
+                                                <div class="collapse" id="LGUD51Content">
+                                                    <p>Contenu à venir pour le 7 Juillet 2025.</p>
+                                                </div>
+                                                <!-- Contenu du journal de stage (Jour 52 - Semaine 11) -->
+                                                <div class="collapse" id="LGUD52Content">
+                                                    <p>Contenu à venir pour le 8 Juillet 2025.</p>
+                                                </div>
+                                                <!-- Contenu du journal de stage (Jour 53 - Semaine 11) -->
+                                                <div class="collapse" id="LGUD53Content">
+                                                    <p>Contenu à venir pour le 9 Juillet 2025.</p>
+                                                </div>
+                                                <!-- Contenu du journal de stage (Jour 54 - Semaine 11) -->
+                                                <div class="collapse" id="LGUD54Content">
+                                                    <p>Contenu à venir pour le 10 Juillet 2025.</p>
+                                                </div>
+                                                <!-- Contenu du journal de stage (Jour 55 - Semaine 11) -->
+                                                <div class="collapse" id="LGUD55Content">
+                                                    <p>Contenu à venir pour le 11 Juillet 2025.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <script>
+                                        // Fonction pour afficher/masquer le contenu du journal de stage par semaine
+                                        function toggleWeek(weekId) {
+                                            const weeks = ['LGUS1Content', 'LGUS2Content', 'LGUS3Content', 'LGUS4Content', 'LGUS5Content', 'LGUS6Content', 'LGUS7Content', 'LGUS8Content', 'LGUS9Content', 'LGUS10Content', 'LGUS11Content'];
+                                            weeks.forEach(id => {
+                                                const content = document.getElementById(id);
+                                                if (id === weekId) {
+                                                    content.classList.toggle('collapse');
+                                                } else {
+                                                    content.classList.add('collapse');
+                                                }
+                                            });
+                                        }
+                                        // Initialisation : Cache toutes les semaines au chargement de la page
+                                        window.onload = function() {
+                                            const allWeeks = ['LGUS1Content', 'LGUS2Content', 'LGUS3Content', 'LGUS4Content', 'LGUS5Content', 'LGUS6Content', 'LGUS7Content', 'LGUS8Content', 'LGUS9Content', 'LGUS10Content', 'LGUS11Content'];
+                                            allWeeks.forEach(week => {
+                                                const element = document.getElementById(week);
+                                                if (element) {
+                                                    element.classList.add('collapse');  // Cache toutes les semaines au chargement
+                                                }
+                                            });
+                                        };
+                                        // Fonction pour afficher/masquer le contenu du journal de stage par jour
+                                        function toggleDay(dayId) {
+                                            const days = [
+                                                'LGUD1Content', 'LGUD2Content', 'LGUD3Content', 'LGUD4Content', 'LGUD5Content','LGUD6Content', 'LGUD7Content', 'LGUD8Content', 'LGUD9Content', 'LGUD10Content', 'LGUD11Content', 'LGUD12Content', 'LGUD13Content', 'LGUD14Content', 'LGUD15Content', 'LGUD16Content', 'LGUD17Content', 'LGUD18Content', 'LGUD19Content', 'LGUD20Content', 'LGUD21Content', 'LGUD22Content', 'LGUD23Content', 'LGUD24Content', 'LGUD25Content', 'LGUD26Content', 'LGUD27Content', 'LGUD28Content', 'LGUD29Content', 'LGUD30Content', 'LGUD31Content', 'LGUD32Content', 'LGUD33Content', 'LGUD34Content', 'LGUD35Content', 'LGUD36Content', 'LGUD37Content', 'LGUD38Content', 'LGUD39Content', 'LGUD40Content', 'LGUD41Content', 'LGUD42Content', 'LGUD43Content', 'LGUD44Content', 'LGUD45Content', 'LGUD46Content', 'LGUD47Content', 'LGUD48Content', 'LGUD49Content', 'LGUD50Content', 'LGUD51Content', 'LGUD52Content', 'LGUD53Content', 'LGUD54Content', 'LGUD55Content'
+                                            ];
+                                            days.forEach(id => {
+                                                const content = document.getElementById(id);
+                                                if (id === dayId) {
+                                                    content.classList.toggle('collapse');
+                                                } else {
+                                                    content.classList.add('collapse');
+                                                }
+                                            });
+                                        }
+                                    </script>
                                 </div>
                             </div>
                         </div>

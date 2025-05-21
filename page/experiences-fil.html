@@ -194,7 +194,14 @@
                         <div class="card shadow-sm">
                             <img src="../img/initchop.jpg" class="card-img-top" alt="Initiation en hélicoptère">
                             <div class="card-body">
-                                <h5 class="card-title">Introductory flight ng helicopter (Boracay, Philippines)</h5>
+                                <h5 class="card-title">Introductory flight ng helicopter (Boracay, Philippines)
+                                    <!-- Lien YTB   -->
+                                    <a href="https://youtu.be/KWckAXoT1hc?si=vLNapumlEskcdj6O" target="_blank" title="Panoorin ang video ng introductory flight">
+                                        <span>
+                                            <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_72/f_auto/q_auto/v1703069376/icones-cv/rounded/reseaux-sociaux/icone-cv-logo-youtube-rouge_wuupxd" alt="Video ng introductory flight" width="25" height="25" class="d-inline-block align-text-top">
+                                        </span>
+                                    </a>
+                                </h5>
                                 <p class="card-text">Boracay, 2022</p>
                                 <p class="card-body">Pinamaneho ang isang helicopter sa maikling paglipad—isang di-malilimutang karanasan na nagpatibay sa aking hilig sa aviation.</p>
                             </div>
@@ -205,7 +212,14 @@
                         <div class="card shadow-sm">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/KaliboAklanSeal.jpg" class="card-img-top mx-auto d-block" alt="LGU Kalibo" style="width: 50%; height: auto; margin-top: 25px;">
                             <div class="card-body">
-                                <h5 class="card-title" id="titleKalibo">Internship sa Munisipalidad ng Kalibo</h5>
+                                <h5 class="card-title" id="titleKalibo">Internship sa Munisipalidad ng Kalibo (OMPDC)
+                                    <!-- Convention de stage signer -->
+                                    <a href="../docs/Internship Agreement LEO UNITE.pdf" target="_blank" title="I-download ang internship agreement">
+                                        <span>
+                                            <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_72/f_auto/q_auto/v1703077714/icones-cv/rounded/rubriques/icone-cv-formation_ibiywg" alt="Internship Agreement" width="25" height="25" class="d-inline-block align-text-top">
+                                        </span>
+                                    </a>
+                                </h5>
                                 <p class="card-text" id="locationKalibo">Kalibo, Pilipinas, Simula noong Abril 28, 2025</p>
                                 <p class="card-body" id="descriptionKalibo">Para sa aking internship sa ikalawang taon ng BUT SD, nagkaroon ako ng pagkakataon na magsagawa ng internship sa Office of the Municipal Planning and Development Coordinator ng LGU Kalibo. Ang internship na ito ay may kinalaman sa pagtulong sa pag-update ng land use plan at pagsusuri ng mga panganib sa klima at mga kalamidad para sa munisipalidad ng Kalibo, sa Pilipinas.</p>
                                 <!-- Website ng Munisipalidad -->
@@ -220,130 +234,428 @@
                                     <p id="detailsKaliboContent">
                                         Ang internship na ito ay nagbigay sa akin ng pagkakataon na mag-ambag sa mga proyekto ng urbanisasyon at pamamahala ng mga panganib sa klima, na nagpapalakas ng aking kasanayan sa pagsusuri ng datos at pamamahala ng mga proyekto.
                                     </p>
-                                    <!-- Internship journal -->
+                                    <!-- Journal ng Internship -->
                                     <div id="journal-buttons" class="mt-3">
-                                        <h6>Journal ng internship:</h6>
-                                        <div class="dropdown"></div>
-                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="weekDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Pumili ng linggo
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="weekDropdown">
-                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS1Content')">Linggo 1</a></li>
-                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS2Content')">Linggo 2</a></li>
-                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS3Content')">Linggo 3</a></li>
-                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS4Content')">Linggo 4</a></li>
-                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS5Content')">Linggo 5</a></li>
-                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS6Content')">Linggo 6</a></li>
-                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS7Content')">Linggo 7</a></li>
-                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS8Content')">Linggo 8</a></li>
-                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS9Content')">Linggo 9</a></li>
-                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS10Content')">Linggo 10</a></li>
-                                            <li><a class="dropdown-item" onclick="toggleWeek('LGUS11Content')">Linggo 11</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <script>
-                                    // Function to show/hide internship journal content by week
-                                    function toggleWeek(weekId) {
-                                        const weeks = ['LGUS1Content', 'LGUS2Content', 'LGUS3Content', 'LGUS4Content', 'LGUS5Content', 'LGUS6Content', 'LGUS7Content', 'LGUS8Content', 'LGUS9Content', 'LGUS10Content', 'LGUS11Content'];
-                                        weeks.forEach(id => {
-                                            const content = document.getElementById(id);
-                                            if (id === weekId) {
-                                                content.classList.toggle('collapse');
-                                            } else {
-                                                content.classList.add('collapse');
-                                            }
-                                        });
-                                    }
-                                    // Initialization: Hide all weeks when the page loads
-                                    window.onload = function() {
-                                        const allWeeks = ['LGUS1Content', 'LGUS2Content', 'LGUS3Content', 'LGUS4Content', 'LGUS5Content', 'LGUS6Content', 'LGUS7Content', 'LGUS8Content', 'LGUS9Content', 'LGUS10Content', 'LGUS11Content'];
-                                        allWeeks.forEach(week => {
-                                            const element = document.getElementById(week);
-                                            if (element) {
-                                                element.classList.add('collapse');  // Hide all weeks on page load
-                                            }
-                                        });
-                                    };
-                                    // Function to show/hide internship journal content by day
-                                    function toggleDay(dayId) {
-                                        const days = ['LGUD1Content', 'LGUD2Content', 'LGUD3Content', 'LGUD4Content', 'LGUD5Content', 'LGUD6Content', 'LGUD7Content', 'LGUD8Content', 'LGUD9Content', 'LGUD10Content'];
-                                        days.forEach(id => {
-                                            const content = document.getElementById(id);
-                                            if (id === dayId) {
-                                                content.classList.toggle('collapse');
-                                            } else {
-                                                content.classList.add('collapse');
-                                            }
-                                        });
-                                    }
-                                </script>
-                                <!-- Internship journal content (Week 1) -->
-                                <div class="collapse" id="LGUS1Content">
-                                    <h7>Linggo 1 (Abril 28, 2025 - Mayo 2, 2025)</h7>
-                                    <p>Noong aking unang linggo, nakilala ko ang team, tinutunan ang mga pasilidad, at nakipag-usap tungkol sa mga layunin ng internship. Humanga ako sa kanilang dedikasyon sa sustainable development.</p>
-                                    <div class="btn-group" role="group" aria-label="Internship journal - Week 1">
-                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD1Content')">Araw 1<br><small>(Abril 28)</small></button>
-                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD2Content')">Araw 2<br><small>(Abril 29)</small></button>
-                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD3Content')">Araw 3<br><small>(Abril 30)</small></button>
-                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD4Content')">Araw 4<br><small>(Mayo 1)</small></button>
-                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD5Content')">Araw 5<br><small>(Mayo 2)</small></button>
-                                    </div>
-                                    <!-- Internship journal content (Day 1 - Week 1) -->
-                                    <div class="collapse" id="LGUD1Content">
-                                        <p>Sa unang araw ng internship (Abril 28, 2025), ako ay tinanggap ng team ng Office of the Municipal Planning and Development Coordinator. Nagkaroon ako ng pagkakataon na makilala ang aking mga katrabaho at maging pamilyar sa mga pasilidad. Pinag-usapan namin ang mga layunin ng internship at ang mga kasalukuyang proyekto.</p>
-                                        <p>Binisita rin namin ang office ng munisipal na pagpaplano, kung saan ako ay nakapag-obserba ng mga aktibidad na kasalukuyang isinasagawa. Humanga ako sa dedikasyon ng team sa sustainable development at pamamahala ng mga panganib sa klima.</p>
-                                        <p>Sa huli ng araw, nakasama ko sila sa isang meeting kung saan tinalakay namin ang mga prayoridad para sa susunod na linggo. Ako'y nasasabik na magsimula sa mga proyektong ito.</p>
-                                    </div>
-                                    <!-- Internship journal content (Day 2 - Week 1) -->
-                                    <div class="collapse" id="LGUD2Content">
-                                        <p>Noong ikalawang araw (Abril 29, 2025), ako ay naging bahagi ng pag-update ng land use plan ng munisipalidad. Nakipagtulungan ako sa team upang suriin ang mga geographic data at matukoy ang mga risk zones. Ginamit namin ang mga tool sa pagmamapa upang makita ang mga impormasyon.</p>
-                                        <p>Sumama rin ako sa mga eksperto sa urban planning upang magdiskusyon tungkol sa mga prinsipyo ng sustainable development at kung paano ito maisasakatuparan sa aming proyekto.</p>
-                                    </div>
-                                    <!-- Internship journal content (Day 3 - Week 1) -->
-                                    <div class="collapse" id="LGUD3Content">
-                                        <p>Noong ikatlong araw (Abril 30, 2025), ako ay nagpatuloy sa pagsusuri ng mga risk zones sa Kalibo gamit ang GIS (Geographic Information System). Pinag-aralan ko kung paano nakakaapekto ang klima sa urbanisasyon at paano ito makakatulong sa pagpaplano ng mga proyekto sa hinaharap.</p>
-                                    </div>
-                                    <!-- Internship journal content (Day 4 - Week 1) -->
-                                    <div class="collapse" id="LGUD4Content">
-                                        <p>Noong ikaapat na araw (Mayo 1, 2025), nakilala ko ang QGIS software upang matutunan kung paano maipapakita ang ilang datos sa mapa ng rehiyon.</p>
-                                        <p>Napansin ko ang kahirapan ng software, lalo na sa paggawa ng mapa at simula ng pag-gawa ng legend.</p>
-                                    </div>
-                                    <!-- Internship journal content (Day 5 - Week 1) -->
-                                    <div class="collapse" id="LGUD5Content">
-                                        <p>Noong ikalimang araw (Mayo 2, 2025), nagsimula kami sa paggawa ng PowerPoint presentation (PPTX) batay sa mga datos na inihanda ng isang statistician.</p>
-                                        <p>Ang datos na ito ay ilalahad sa isang pagpupulong upang mag-coordinate ang lahat ng departamentong pambayan at ang Barangay ng lungsod upang planuhin ang mga sustainable development initiatives para sa darating na linggo.</p>
-                                        <p>Pinayagan akong makipagtulungan sa team upang ayusin ang impormasyon ng malinaw at epektibo para sa presentasyon.</p>
-                                    </div>
-                                </div>
-                                <!-- Internship journal content (Week 2) -->
-                                <div class="collapse" id="LGUS2Content">
-                                    <p>Sa ikalawang linggo, ipagpatuloy ko ang pag-update ng land use plan at nakilahok sa mga pagpupulong ukol sa urban planning. Nag-visit din ako sa mga lokal na sites upang mas maunawaan ang mga hamon ng urban development.</p>
-                                    <div class="btn-group" role="group" aria-label="Internship Journal - Week 2">
-                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD6Content')">Araw 6<br><small>(Mayo 5)</small></button>
-                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD7Content')">Araw 7<br><small>(Mayo 6)</small></button>
-                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD8Content')">Araw 8<br><small>(Mayo 7)</small></button>
-                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD9Content')">Araw 9<br><small>(Mayo 8)</small></button>
-                                        <button class="btn btn-outline-primary" onclick="toggleDay('LGUD10Content')">Araw 10<br><small>(Mayo 9)</small></button>
-                                    </div>
-                                    <!-- Internship journal content (Day 6 - Week 2) -->
-                                    <div class="collapse" id="LGUD6Content">
-                                        <p>Noong ikaanim na araw (Mayo 5, 2025), nag-visit kami sa ilang sites na may kinalaman sa climate risk management. Namasdan ko ang kasalukuyang imprastruktura at na-assess ang mga hamon ng munisipalidad.</p>
-                                    </div>
-                                    <!-- Internship journal content (Day 7 - Week 2) -->
-                                    <div class="collapse" id="LGUD7Content">
-                                        <p>Noong ikapitong araw (Mayo 6), walang entry ang ginawa para sa araw na ito.</p>
-                                    </div>
-                                    <!-- Internship journal content (Day 8 - Week 2) -->
-                                    <div class="collapse" id="LGUD8Content">
-                                        <p>Noong ikawalong araw (Mayo 7, 2025), natapos ko ang PowerPoint presentation na naglalaman ng mga global data para sa 2022. Mahalaga ang gawaing ito para sa paghahanda para sa pagpupulong na naka-schedule kinabukasan.</p>
-                                        <p>Sinaliksik ko rin ang impormasyon upang matukoy ang mga priority actions na ipapatupad sa mga susunod na buwan at taon, kasama ang team.</p>
-                                    </div>
-                                    <!-- Internship journal content (Day 9 - Week 2) -->
-                                    <div class="collapse" id="LGUD9Content">
-                                        <p>Noong ikasiyam na araw (Mayo 8, 2025), nakilahok ako sa Sectoral Municipality Meeting kung saan iprinisinta ang CBMS 2022 PowerPoint presentation. Ang pagpupulong ay dinaluhan ng mga kinatawan mula sa iba't ibang departamento at Barangay ng munisipalidad.</p>
-                                        <p>Nagkaroon ako ng pagkakataong makita kung paano iniharap at tinalakay ang mga impormasyon mula sa CBMS 2022 at ang mga reaksyon ng mga kalahok. Naitindihan ko ang proseso ng paggawa ng desisyon sa munisipalidad at ang kahalagahan ng data sa paggawa ng mga stratehiya para sa hinaharap.</p>
-                                    </div>
+                                        <h6>Journal ng Internship:</h6>
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="weekDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Piliin ang linggo
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="weekDropdown">
+                                                <li><a class="dropdown-item" onclick="toggleWeek('LGUS1Content')">Linggo 1 (Abril 28 - Mayo 2)</a></li>
+                                                <li><a class="dropdown-item" onclick="toggleWeek('LGUS2Content')">Linggo 2 (Mayo 5 - 9)</a></li>
+                                                <li><a class="dropdown-item" onclick="toggleWeek('LGUS3Content')">Linggo 3 (Mayo 12 - 16)</a></li>
+                                                <li><a class="dropdown-item" onclick="toggleWeek('LGUS4Content')">Linggo 4 (Mayo 19 - 23)</a></li>
+                                                <li><a class="dropdown-item" onclick="toggleWeek('LGUS5Content')">Linggo 5 (Mayo 26 - 30)</a></li>
+                                                <li><a class="dropdown-item" onclick="toggleWeek('LGUS6Content')">Linggo 6 (Hunyo 2 - 6)</a></li>
+                                                <li><a class="dropdown-item" onclick="toggleWeek('LGUS7Content')">Linggo 7 (Hunyo 9 - 13)</a></li>
+                                                <li><a class="dropdown-item" onclick="toggleWeek('LGUS8Content')">Linggo 8 (Hunyo 16 - 20)</a></li>
+                                                <li><a class="dropdown-item" onclick="toggleWeek('LGUS9Content')">Linggo 9 (Hunyo 23 - 27)</a></li>
+                                                <li><a class="dropdown-item" onclick="toggleWeek('LGUS10Content')">Linggo 10 (Hunyo 30 - Hulyo 4)</a></li>
+                                                <li><a class="dropdown-item" onclick="toggleWeek('LGUS11Content')">Linggo 11 (Hulyo 7 - 11)</a></li>
+                                            </ul>
+                                            <!-- Nilalaman ng journal ng internship (Linggo 1) -->
+                                            <div class="collapse" id="LGUS1Content">
+                                                <h6>Linggo 1 (Abril 28, 2025 - Mayo 2, 2025)</h6>
+                                                <p>Noong unang linggo, nakilala ko ang team, inikot ang opisina, at tinalakay ang mga layunin ng internship. Namangha ako sa kanilang dedikasyon sa sustainable development.</p>
+                                                <div class="btn-group" role="group" aria-label="Journal ng Internship - Linggo 1">
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD1Content')">Araw 1<br><small>(Abril 28)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD2Content')">Araw 2<br><small>(Abril 29)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD3Content')">Araw 3<br><small>(Abril 30)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD4Content')">Araw 4<br><small>(Mayo 1)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD5Content')">Araw 5<br><small>(Mayo 2)</small></button>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 1 - Linggo 1) -->
+                                                <div class="collapse" id="LGUD1Content">
+                                                    <p>Sa unang araw ng internship (Abril 28, 2025), mainit akong tinanggap ng team ng Office of the Municipal Planning and Development Coordinator. Nakilala ko ang mga kasamahan at inikot ang opisina. Tinalakay namin ang mga layunin ng internship at ang mga kasalukuyang proyekto.</p>
+                                                    <p>Bumisita rin kami sa municipal planning office kung saan nakita ko ang iba't ibang aktibidad. Namangha ako sa dedikasyon ng team sa sustainable development at climate risk management.</p>
+                                                    <p>Sa huli, dumalo ako sa team meeting kung saan pinag-usapan ang mga prayoridad para sa linggo. Nasabik akong magsimula sa mga proyekto.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 2 - Linggo 1) -->
+                                                <div class="collapse" id="LGUD2Content">
+                                                    <p>Noong ikalawang araw (Abril 29, 2025), tumulong ako sa pag-update ng land use plan ng munisipalidad. Nakipagtulungan ako sa team para suriin ang geographic data at tukuyin ang mga risk area. Gumamit kami ng mapping tools para i-visualize ang impormasyon.</p>
+                                                    <p>Dumalo rin ako sa meeting kasama ang ibang departamento para talakayin ang mga proyekto. Nakita ko kung paano nagtutulungan ang iba't ibang serbisyo para sa iisang layunin.</p>
+                                                    <p>Sa pagtatapos ng araw, nagtanong ako tungkol sa planning process at natuto pa tungkol sa mga hamon ng sustainable development sa munisipalidad.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 3 - Linggo 1) -->
+                                                <div class="collapse" id="LGUD3Content">
+                                                    <p>Noong ikatlong araw (Abril 30, 2025), sinimulan kong gamitin ang CSPro 8.0 software at gumawa ng simpleng data extraction, tulad ng bilang ng "PWD per Barangay" at "Senior Citizen with and without ID per Barangay".</p>
+                                                    <p>Kailangan ng kaunting pag-aayos sa Excel, base sa 2022 data.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 4 - Linggo 1) -->
+                                                <div class="collapse" id="LGUD4Content">
+                                                    <p>Noong ikaapat na araw (Mayo 1, 2025), pinag-aralan ko ang QGIS software para makita kung paano mailalarawan ang ilang data sa mapa ng rehiyon.</p>
+                                                    <p>Nakita ko ang pagiging komplikado ng software, lalo na sa paggawa ng mapa at simula ng paggawa ng legend.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 5 - Linggo 1) -->
+                                                <div class="collapse" id="LGUD5Content">
+                                                    <p>Noong ikalimang araw (Mayo 2, 2025), nagsimula kaming gumawa ng PowerPoint presentation base sa data mula sa statistician.</p>
+                                                    <p>Ipepresenta ang data na ito sa meeting para magplano ng sustainable development initiatives kasama ang lahat ng municipal departments at Barangay.</p>
+                                                    <p>Nakatulong ako sa pag-ayos ng impormasyon para maging malinaw at epektibo ang presentasyon.</p>
+                                                </div>
+                                            </div>
+                                            <!-- Nilalaman ng journal ng internship (Linggo 2) -->
+                                            <div class="collapse" id="LGUS2Content">
+                                                <h6>Linggo 2 (Mayo 5, 2025 - Mayo 9, 2025)</h6>
+                                                <p>Noong ikalawang linggo, ipinagpatuloy ko ang pag-update ng land use plan at dumalo sa mga meeting tungkol sa urban planning. Bumisita rin ako sa mga lokal na site para mas maintindihan ang mga hamon sa urban development.</p>
+                                                <div class="btn-group" role="group" aria-label="Journal ng Internship - Linggo 2">
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD6Content')">Araw 6<br><small>(Mayo 5)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD7Content')">Araw 7<br><small>(Mayo 6)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD8Content')">Araw 8<br><small>(Mayo 7)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD9Content')">Araw 9<br><small>(Mayo 8)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD10Content')">Araw 10<br><small>(Mayo 9)</small></button>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 6 - Linggo 2) -->
+                                                <div class="collapse" id="LGUD6Content">
+                                                    <p>Noong ika-anim na araw (Mayo 5, 2025), bumisita kami sa ilang site na mahalaga para sa climate risk management. Nakita ko ang mga imprastraktura at sinuri ang mga hamon ng munisipalidad.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 7 - Linggo 2) -->
+                                                <div class="collapse" id="LGUD7Content">
+                                                    <p>Noong ika-pitong araw, Mayo 6, walang journal na naisulat para sa araw na ito.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 8 - Linggo 2) -->
+                                                <div class="collapse" id="LGUD8Content">
+                                                    <p>Noong ikawalong araw, Mayo 7, tinapos ko ang PowerPoint presentation na naglalaman ng 2022 data. Mahalaga ito para sa meeting kinabukasan.</p>
+                                                    <p>Sinuri ko rin ang impormasyon para tukuyin ang mga prayoridad na aksyon kasama ang team.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 9 - Linggo 2) -->
+                                                <div class="collapse" id="LGUD9Content">
+                                                    <p>Noong ikasiyam na araw, Mayo 8, dumalo ako sa Sectoral Municipality Meeting kung saan ipinresenta ang PPTX CBMS 2022. Napanood ko kung paano tinalakay at tinanggap ng mga kalahok ang impormasyon.</p>
+                                                    <p>Nakita ko ang proseso ng decision-making at ang halaga ng data sa strategic planning ng munisipalidad.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 10 - Linggo 2) -->
+                                                <div class="collapse" id="LGUD10Content">
+                                                    <p>Noong ikasampung araw, Mayo 9, tumulong ako sa paghahanda ng follow-up meeting matapos ang CBMS 2022 presentation. Tinulungan ko sa pag-compile ng feedback at pagtukoy ng susunod na hakbang.</p>
+                                                    <p>Nakita ko kung paano nakakaapekto ang data sa mga desisyon at ang kahalagahan ng pagtutulungan ng mga departamento para sa sustainable development.</p>
+                                                </div>
+                                            </div>
+                                            <!-- Nilalaman ng journal ng internship (Linggo 3) -->
+                                            <div class="collapse" id="LGUS3Content">
+                                                <h6>Linggo 3 (Mayo 12, 2025 - Mayo 16, 2025)</h6>
+                                                <p>Sa mga susunod na araw.</p>
+                                                <div class="btn-group" role="group" aria-label="Journal ng Internship - Linggo 3"></div>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD11Content')">Araw 11<br><small>(Mayo 12)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD12Content')">Araw 12<br><small>(Mayo 13)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD13Content')">Araw 13<br><small>(Mayo 14)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD14Content')">Araw 14<br><small>(Mayo 15)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD15Content')">Araw 15<br><small>(Mayo 16)</small></button>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 11 - Linggo 3) -->
+                                                <div class="collapse" id="LGUD11Content">
+                                                    <p>Nilalaman ay ilalagay para sa Mayo 12, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 12 - Linggo 3) -->
+                                                <div class="collapse" id="LGUD12Content">
+                                                    <p>Nilalaman ay ilalagay para sa Mayo 13, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 13 - Linggo 3) -->
+                                                <div class="collapse" id="LGUD13Content">
+                                                    <p>Nilalaman ay ilalagay para sa Mayo 14, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 14 - Linggo 3) -->
+                                                <div class="collapse" id="LGUD14Content">
+                                                    <p>Nilalaman ay ilalagay para sa Mayo 15, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 15 - Linggo 3) -->
+                                                <div class="collapse" id="LGUD15Content">
+                                                    <p>Nilalaman ay ilalagay para sa Mayo 16, 2025.</p>
+                                                </div>
+                                            </div>
+                                            <!-- Nilalaman ng journal ng internship (Linggo 4) -->
+                                            <div class="collapse" id="LGUS4Content">
+                                                <h6>Linggo 4 (Mayo 19, 2025 - Mayo 23, 2025)</h6>
+                                                <p>Sa mga susunod na araw.</p>
+                                                <div class="btn-group" role="group" aria-label="Journal ng Internship - Linggo 4">
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD16Content')">Araw 16<br><small>(Mayo 19)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD17Content')">Araw 17<br><small>(Mayo 20)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD18Content')">Araw 18<br><small>(Mayo 21)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD19Content')">Araw 19<br><small>(Mayo 22)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD20Content')">Araw 20<br><small>(Mayo 23)</small></button>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 16 - Linggo 4) -->
+                                                <div class="collapse" id="LGUD16Content">
+                                                    <p>Nilalaman ay ilalagay para sa Mayo 19, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 17 - Linggo 4) -->
+                                                <div class="collapse" id="LGUD17Content">
+                                                    <p>Nilalaman ay ilalagay para sa Mayo 20, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 18 - Linggo 4) -->
+                                                <div class="collapse" id="LGUD18Content">
+                                                    <p>Nilalaman ay ilalagay para sa Mayo 21, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 19 - Linggo 4) -->
+                                                <div class="collapse" id="LGUD19Content">
+                                                    <p>Nilalaman ay ilalagay para sa Mayo 22, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 20 - Linggo 4) -->
+                                                <div class="collapse" id="LGUD20Content">
+                                                    <p>Nilalaman ay ilalagay para sa Mayo 23, 2025.</p>
+                                                </div>
+                                            </div>
+                                            <!-- Nilalaman ng journal ng internship (Linggo 5) -->
+                                            <div class="collapse" id="LGUS5Content">
+                                                <h6>Linggo 5 (Mayo 26, 2025 - Mayo 30, 2025)</h6>
+                                                <p>Sa mga susunod na araw.</p>
+                                                <div class="btn-group" role="group" aria-label="Journal ng Internship - Linggo 5">
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD21Content')">Araw 21<br><small>(Mayo 26)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD22Content')">Araw 22<br><small>(Mayo 27)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD23Content')">Araw 23<br><small>(Mayo 28)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD24Content')">Araw 24<br><small>(Mayo 29)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD25Content')">Araw 25<br><small>(Mayo 30)</small></button>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 21 - Linggo 5) -->
+                                                <div class="collapse" id="LGUD21Content">
+                                                    <p>Nilalaman ay ilalagay para sa Mayo 26, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 22 - Linggo 5) -->
+                                                <div class="collapse" id="LGUD22Content">
+                                                    <p>Nilalaman ay ilalagay para sa Mayo 27, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 23 - Linggo 5) -->
+                                                <div class="collapse" id="LGUD23Content">
+                                                    <p>Nilalaman ay ilalagay para sa Mayo 28, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 24 - Linggo 5) -->
+                                                <div class="collapse" id="LGUD24Content">
+                                                    <p>Nilalaman ay ilalagay para sa Mayo 29, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 25 - Linggo 5) -->
+                                                <div class="collapse" id="LGUD25Content">
+                                                    <p>Nilalaman ay ilalagay para sa Mayo 30, 2025.</p>
+                                                </div>
+                                            </div>
+                                            <!-- Nilalaman ng journal ng internship (Linggo 6) -->
+                                            <div class="collapse" id="LGUS6Content">
+                                                <h6>Linggo 6 (Hunyo 2, 2025 - Hunyo 6, 2025)</h6>
+                                                <p>Sa mga susunod na araw.</p>
+                                                <div class="btn-group" role="group" aria-label="Journal ng Internship - Linggo 6">
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD26Content')">Araw 26<br><small>(Hunyo 2)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD27Content')">Araw 27<br><small>(Hunyo 3)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD28Content')">Araw 28<br><small>(Hunyo 4)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD29Content')">Araw 29<br><small>(Hunyo 5)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD30Content')">Araw 30<br><small>(Hunyo 6)</small></button>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 26 - Linggo 6) -->
+                                                <div class="collapse" id="LGUD26Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hunyo 2, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 27 - Linggo 6) -->
+                                                <div class="collapse" id="LGUD27Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hunyo 3, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 28 - Linggo 6) -->
+                                                <div class="collapse" id="LGUD28Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hunyo 4, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 29 - Linggo 6) -->
+                                                <div class="collapse" id="LGUD29Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hunyo 5, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 30 - Linggo 6) -->
+                                                <div class="collapse" id="LGUD30Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hunyo 6, 2025.</p>
+                                                </div>
+                                            </div>
+                                            <!-- Nilalaman ng journal ng internship (Linggo 7) -->
+                                            <div class="collapse" id="LGUS7Content">
+                                                <h6>Linggo 7 (Hunyo 9, 2025 - Hunyo 13, 2025)</h6>
+                                                <p>Sa mga susunod na araw.</p>
+                                                <div class="btn-group" role="group" aria-label="Journal ng Internship - Linggo 7">
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD31Content')">Araw 31<br><small>(Hunyo 9)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD32Content')">Araw 32<br><small>(Hunyo 10)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD33Content')">Araw 33<br><small>(Hunyo 11)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD34Content')">Araw 34<br><small>(Hunyo 12)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD35Content')">Araw 35<br><small>(Hunyo 13)</small></button>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 31 - Linggo 7) -->
+                                                <div class="collapse" id="LGUD31Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hunyo 9, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 32 - Linggo 7) -->
+                                                <div class="collapse" id="LGUD32Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hunyo 10, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 33 - Linggo 7) -->
+                                                <div class="collapse" id="LGUD33Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hunyo 11, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 34 - Linggo 7) -->
+                                                <div class="collapse" id="LGUD34Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hunyo 12, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 35 - Linggo 7) -->
+                                                <div class="collapse" id="LGUD35Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hunyo 13, 2025.</p>
+                                                </div>
+                                            </div>
+                                            <!-- Nilalaman ng journal ng internship (Linggo 8) -->
+                                            <div class="collapse" id="LGUS8Content">
+                                                <h6>Linggo 8 (Hunyo 16, 2025 - Hunyo 20, 2025)</h6>
+                                                <p>Sa mga susunod na araw.</p>
+                                                <div class="btn-group" role="group" aria-label="Journal ng Internship - Linggo 8">
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD36Content')">Araw 36<br><small>(Hunyo 16)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD37Content')">Araw 37<br><small>(Hunyo 17)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD38Content')">Araw 38<br><small>(Hunyo 18)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD39Content')">Araw 39<br><small>(Hunyo 19)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD40Content')">Araw 40<br><small>(Hunyo 20)</small></button>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 36 - Linggo 8) -->
+                                                <div class="collapse" id="LGUD36Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hunyo 16, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 37 - Linggo 8) -->
+                                                <div class="collapse" id="LGUD37Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hunyo 17, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 38 - Linggo 8) -->
+                                                <div class="collapse" id="LGUD38Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hunyo 18, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 39 - Linggo 8) -->
+                                                <div class="collapse" id="LGUD39Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hunyo 19, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 40 - Linggo 8) -->
+                                                <div class="collapse" id="LGUD40Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hunyo 20, 2025.</p>
+                                                </div>
+                                            </div>
+                                            <!-- Nilalaman ng journal ng internship (Linggo 9) -->
+                                            <div class="collapse" id="LGUS9Content">
+                                                <h6>Linggo 9 (Hunyo 23, 2025 - Hunyo 27, 2025)</h6>
+                                                <p>Sa mga susunod na araw.</p>
+                                                <div class="btn-group" role="group" aria-label="Journal ng Internship - Linggo 9">
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD41Content')">Araw 41<br><small>(Hunyo 23)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD42Content')">Araw 42<br><small>(Hunyo 24)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD43Content')">Araw 43<br><small>(Hunyo 25)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD44Content')">Araw 44<br><small>(Hunyo 26)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD45Content')">Araw 45<br><small>(Hunyo 27)</small></button>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 41 - Linggo 9) -->
+                                                <div class="collapse" id="LGUD41Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hunyo 23, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 42 - Linggo 9) -->
+                                                <div class="collapse" id="LGUD42Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hunyo 24, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 43 - Linggo 9) -->
+                                                <div class="collapse" id="LGUD43Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hunyo 25, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 44 - Linggo 9) -->
+                                                <div class="collapse" id="LGUD44Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hunyo 26, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 45 - Linggo 9) -->
+                                                <div class="collapse" id="LGUD45Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hunyo 27, 2025.</p>
+                                                </div>
+                                            </div>
+                                            <!-- Nilalaman ng journal ng internship (Linggo 10) -->
+                                            <div class="collapse" id="LGUS10Content">
+                                                <h6>Linggo 10 (Hunyo 30, 2025 - Hulyo 4, 2025)</h6>
+                                                <p>Sa mga susunod na araw.</p>
+                                                <div class="btn-group" role="group" aria-label="Journal ng Internship - Linggo 10">
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD46Content')">Araw 46<br><small>(Hunyo 30)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD47Content')">Araw 47<br><small>(Hulyo 1)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD48Content')">Araw 48<br><small>(Hulyo 2)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD49Content')">Araw 49<br><small>(Hulyo 3)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD50Content')">Araw 50<br><small>(Hulyo 4)</small></button>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 46 - Linggo 10) -->
+                                                <div class="collapse" id="LGUD46Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hunyo 30, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 47 - Linggo 10) -->
+                                                <div class="collapse" id="LGUD47Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hulyo 1, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 48 - Linggo 10) -->
+                                                <div class="collapse" id="LGUD48Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hulyo 2, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 49 - Linggo 10) -->
+                                                <div class="collapse" id="LGUD49Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hulyo 3, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 50 - Linggo 10) -->
+                                                <div class="collapse" id="LGUD50Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hulyo 4, 2025.</p>
+                                                </div>
+                                            </div>
+                                            <!-- Nilalaman ng journal ng internship (Linggo 11) -->
+                                            <div class="collapse" id="LGUS11Content">
+                                                <h6>Linggo 11 (Hulyo 7, 2025 - Hulyo 11, 2025)</h6>
+                                                <p>Sa mga susunod na araw.</p>
+                                                <div class="btn-group" role="group" aria-label="Journal ng Internship - Linggo 11">
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD51Content')">Araw 51<br><small>(Hulyo 7)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD52Content')">Araw 52<br><small>(Hulyo 8)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD53Content')">Araw 53<br><small>(Hulyo 9)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD54Content')">Araw 54<br><small>(Hulyo 10)</small></button>
+                                                    <button class="btn btn-outline-primary" onclick="toggleDay('LGUD55Content')">Araw 55<br><small>(Hulyo 11)</small></button>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 51 - Linggo 11) -->
+                                                <div class="collapse" id="LGUD51Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hulyo 7, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 52 - Linggo 11) -->
+                                                <div class="collapse" id="LGUD52Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hulyo 8, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 53 - Linggo 11) -->
+                                                <div class="collapse" id="LGUD53Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hulyo 9, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 54 - Linggo 11) -->
+                                                <div class="collapse" id="LGUD54Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hulyo 10, 2025.</p>
+                                                </div>
+                                                <!-- Nilalaman ng journal ng internship (Araw 55 - Linggo 11) -->
+                                                <div class="collapse" id="LGUD55Content">
+                                                    <p>Nilalaman ay ilalagay para sa Hulyo 11, 2025.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <script>
+                                        // Function para ipakita/itago ang linggo
+                                        function toggleWeek(weekId) {
+                                            const weeks = ['LGUS1Content', 'LGUS2Content', 'LGUS3Content', 'LGUS4Content', 'LGUS5Content', 'LGUS6Content', 'LGUS7Content', 'LGUS8Content', 'LGUS9Content', 'LGUS10Content', 'LGUS11Content'];
+                                            weeks.forEach(id => {
+                                                const content = document.getElementById(id);
+                                                if (id === weekId) {
+                                                    content.classList.toggle('collapse');
+                                                } else {
+                                                    content.classList.add('collapse');
+                                                }
+                                            });
+                                        }
+                                        // Initialisasyon: Itago lahat ng linggo sa pag-load ng page
+                                        window.onload = function() {
+                                            const allWeeks = ['LGUS1Content', 'LGUS2Content', 'LGUS3Content', 'LGUS4Content', 'LGUS5Content', 'LGUS6Content', 'LGUS7Content', 'LGUS8Content', 'LGUS9Content', 'LGUS10Content', 'LGUS11Content'];
+                                            allWeeks.forEach(week => {
+                                                const element = document.getElementById(week);
+                                                if (element) {
+                                                    element.classList.add('collapse');
+                                                }
+                                            });
+                                        };
+                                        // Function para ipakita/itago ang araw
+                                        function toggleDay(dayId) {
+                                            const days = [
+                                                'LGUD1Content', 'LGUD2Content', 'LGUD3Content', 'LGUD4Content', 'LGUD5Content','LGUD6Content', 'LGUD7Content', 'LGUD8Content', 'LGUD9Content', 'LGUD10Content', 'LGUD11Content', 'LGUD12Content', 'LGUD13Content', 'LGUD14Content', 'LGUD15Content', 'LGUD16Content', 'LGUD17Content', 'LGUD18Content', 'LGUD19Content', 'LGUD20Content', 'LGUD21Content', 'LGUD22Content', 'LGUD23Content', 'LGUD24Content', 'LGUD25Content', 'LGUD26Content', 'LGUD27Content', 'LGUD28Content', 'LGUD29Content', 'LGUD30Content', 'LGUD31Content', 'LGUD32Content', 'LGUD33Content', 'LGUD34Content', 'LGUD35Content', 'LGUD36Content', 'LGUD37Content', 'LGUD38Content', 'LGUD39Content', 'LGUD40Content', 'LGUD41Content', 'LGUD42Content', 'LGUD43Content', 'LGUD44Content', 'LGUD45Content', 'LGUD46Content', 'LGUD47Content', 'LGUD48Content', 'LGUD49Content', 'LGUD50Content', 'LGUD51Content', 'LGUD52Content', 'LGUD53Content', 'LGUD54Content', 'LGUD55Content'
+                                            ];
+                                            days.forEach(id => {
+                                                const content = document.getElementById(id);
+                                                if (id === dayId) {
+                                                    content.classList.toggle('collapse');
+                                                } else {
+                                                    content.classList.add('collapse');
+                                                }
+                                            });
+                                        }
+                                    </script>
                                 </div>
                             </div>
                         </div>
