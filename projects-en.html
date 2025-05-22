@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Icône de l'onglet -->
+        <link rel="icon" href="https://avatars.githubusercontent.com/u/174519077?v=4">
+        <!-- Nom de l'onglet -->
+        <title>Portfolio - UNITE</title>
+        <!-- Description du site -->
+        <meta name="description" content="Portfolio of Leo Jean UNITE, a data science student passionate about aviation and technology.">
+        <!-- Mots-clés pour le référencement -->
+        <meta name="keywords" content="Portfolio, Leo Jean UNITE, Data Science, Aviation, Technology, Student">
+        <!-- Lien vers le CSS Bootstrap -->
+        <link rel="stylesheet" href="../css_bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="css/projects-style.css">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body class="en">
+        <!-- Barre de navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container">
+                <!-- Logo et Titre -->
+                <a class="navbar-brand" href="#">
+                    <img src="https://avatars.githubusercontent.com/u/174519077?v=4" alt="PP" width="40" height="40" class="d-inline-block">
+                    Portfolio of Leo Jean UNITE
+                </a>
+                <!-- Horloge -->
+                <div class="d-inline-block ms-3 justify-content-center">
+                    <span id="time-france" class="text-light me-3"></span>
+                    <span id="time-philippines" class="text-light"></span>
+                </div>
+                <script>
+                    function updateTime() {
+                        const franceTime = new Date().toLocaleString("fr-FR", { timeZone: "Europe/Paris", hour: "2-digit", minute: "2-digit" });
+                        const philippinesTime = new Date().toLocaleString("en-PH", { timeZone: "Asia/Manila", hour: "2-digit", minute: "2-digit" });
+                        document.getElementById("time-france").textContent = `France: ${franceTime}`;
+                        document.getElementById("time-philippines").textContent = `Philippines: ${philippinesTime}`;
+                    }
+                    setInterval(updateTime, 1000);
+                    updateTime();
+                </script>
+                <!-- Bouton pour mobiles -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Liens de navigation -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Accueil -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">
+                                <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703068568/icones-cv/rounded/contact/blanc/icone-cv-adresse-maison-blanc_lhzzon" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                                Home
+                            </a>
+                        </li>
+                        <!-- Presentation -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703078089/icones-cv/rounded/rubriques/blanc/icone-cv-experience-professionnelle-blanc_zjjoxf" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                                Projects
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="PortfolioDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="presentation-en.html">
+                                        <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703077718/icones-cv/rounded/rubriques/icone-cv-profil-badge_gxczzr" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                                        Presentation
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="experiences-en.html">
+                                        <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703077714/icones-cv/rounded/rubriques/icone-cv-experience-professionnelle-2_rybho4" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                                        Experiences
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../contact.html">
+                                        <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703068363/icones-cv/rounded/contact/icone-cv-mail_s1hkao" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                                        Contact Me
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Réseaux sociaux -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="socialDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703068576/icones-cv/rounded/contact/blanc/icone-cv-reseaux-sociaux-blanc_joqcnq" alt="" width="25" height="25" class="d-inline-block">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="socialDropdown">
+                                <!-- GitHub -->
+                                <li>
+                                    <a class="dropdown-item social_link-github" href="https://github.com/TheColonel92" target="_blank">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="25" height="25" class="d-inline-block align-text-top">
+                                        GitHub
+                                    </a>
+                                </li>
+                                <!-- LinkedIn -->
+                                <li>
+                                    <a class="dropdown-item social_link-linkedin" href="https://www.linkedin.com/in/lj-unite/" target="_blank">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="25" height="25" class="d-inline-block align-text-top">
+                                        LinkedIn
+                                    </a>
+                                </li>
+                                <!-- Discord -->
+                                <li>
+                                    <a class="dropdown-item social_link-discord" href="https://discord.gg/CBsSTKzjrY" target="_blank">
+                                        <img src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1-1.png" alt="Discord" width="25" height="25" class="d-inline-block align-text-top">
+                                        Discord
+                                    </a>
+                                </li>
+                                <!-- Instagram -->
+                                <li>
+                                    <a class="dropdown-item social_link-ig" href="https://www.instagram.com/leoune_92/" target="_blank">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" alt="Instagram" width="25" height="25" class="d-inline-block align-text-top">
+                                        Instagram
+                                    </a>
+                                </li>
+                                <!-- Facebook/Messenger -->
+                                <li>
+                                    <a class="dropdown-item social_link-fb" href="https://www.facebook.com/profile.php?id=100011170991125" target="_blank">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Logo_de_Facebook.png/767px-Logo_de_Facebook.png" alt="Facebook" width="25" height="25" class="d-inline-block align-text-top">
+                                        Facebook
+                                    </a>
+                                </li>
+                                <!-- Youtube -->
+                                <li>
+                                    <a class="dropdown-item social_link-yt" href="https://www.youtube.com/@ColUnite" target="_blank">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/600px-YouTube_icon_%282013-2017%29.png" alt="Youtube" width="25" height="25" class="d-inline-block align-text-top">
+                                        Youtube
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Download CV -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../docs/cv/CV_Leo-Jean-UNITE_BUT2-VCOD-FI.pdf" download>
+                                <img src="https://res.cloudinary.com/jobimpact/image/upload/c_limit,w_36/f_auto/q_auto/v1703078094/icones-cv/rounded/rubriques/blanc/icone-cv-profil-badge-2-blanc_oze0ha" alt="CV" width="25" height="25" class="d-inline-block">
+                                CV
+                            </a>
+                        </li>
+                        <!-- Language Selection -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="projects-fr.html" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://em-content.zobj.net/source/twitter/408/flag-united-kingdom_1f1ec-1f1e7.png" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="projects-fr.html">
+                                        <img src="https://em-content.zobj.net/source/twitter/408/flag-france_1f1eb-1f1f7.png" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                                        French
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="projects-fil.html">
+                                        <img src="https://em-content.zobj.net/source/twitter/408/flag-philippines_1f1f5-1f1ed.png" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                                        Filipino
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Section Réalisations -->
+        <section id="achievements" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center">My achievements</h2>
+                <!-- Section "Découvrez mes projets personnels et professionnels :" -->
+                <div class="container my-4">
+                    <h3 class="text-center">Discover my personal and professional projects:</h3>
+                    <div class="d-flex justify-content-center gap-2 mt-3">
+                        <button class="btn btn-primary mt-3" id="toggleAchievements">
+                            Professional and academic achievements
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Contenu des Réalisations personnelles -->
+                <div class="collapse show multi-collapse" id="personalAchievements">
+                    <div class="card card-body mt-3">
+                        <!-- Réalisations Personnelles -->
+                        <h3 class="mt-5">Personal achievements</h3>
+                        <div class="row">
+                            <!-- YouTube -->
+                            <div class="col-md-6">
+                                <a href="https://www.youtube.com/@ColUnite">
+                                    <div class="card shadow-sm">
+                                        <img src="https://logos-world.net/wp-content/uploads/2020/04/YouTube-Logo.png" class="card-img-top" alt="YouTube">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Content Creator on YouTube</h5>
+                                            <p class="card-text">March 31, 2016 - Present</p>
+                                            <p class="card-body">Producing videos focused on militaria, gaming, and travel vlogs. I have developed skills in video editing, community management, and storytelling to deliver engaging content to my subscribers.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Twitch -->
+                            <div class="col-md-6">
+                                <a href="https://www.twitch.tv/thecolonel92">
+                                    <div class="card shadow-sm">
+                                        <img src="https://logos-world.net/wp-content/uploads/2020/11/Twitch-Emblem.png" class="card-img-top" alt="Twitch">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Streamer on Twitch</h5>
+                                            <p class="card-text">April 29, 2018 - Present</p>
+                                            <p class="card-body">Hosting live-streaming sessions focused on relaxing games and militaria. This experience has allowed me to master live broadcasting techniques, engage with an audience in real time, and create a friendly atmosphere.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- FrTFC -->
+                            <div class="col-md-6">
+                                <a href="https://thecolonel92.github.io/frtfc-web/index-en.html">
+                                    <div class="card shadow-sm">
+                                        <img src="../img/FrTFCAirParade-overlay.png" class="card-img-top" alt="FrTFC">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Formation of an eSport team (FrTFC)</h5>
+                                            <p class="card-text">2021 - Present</p>
+                                            <p class="card-body">Founded a small eSports team with friends for the game War Thunder, combining strategy, coordination, and teamwork.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Kumu Live -->
+                            <div class="col-md-6">
+                                <div class="card shadow-sm">
+                                    <img src="../img/kumu.jpg" class="card-img-top" alt="Kumu">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Streamer on Kumu Live</h5>
+                                        <p class="card-text">2025 - Present</p>
+                                        <p class="card-body">
+                                            I have been a streamer on Kumu since January 2025 and am a proud member of <img src="../img/NA.png" alt="Logo de mon agence Kumu" class="logo-agence"> Nightmare Agency. Thanks to my agency, I have become more open and have grown in an environment that fosters creativity and meaningful interactions with an active community.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contenu des Réalisations professionnelles et universitaires -->
+                <div class="collapse multi-collapse" id="professionalAchievements">
+                    <div class="card card-body mt-3">
+                        <!-- Réalisations Professionnelles/Universitaires -->
+                        <h3 class="mt-5">Professional and academic achievements</h3>
+                        <div class="row">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#SD1" aria-expanded="false" aria-controls="SD1">
+                                BUT - Data Science - 1st year
+                            </button>
+                            <div class="collapse show" id="SD1">
+                                <!-- Projet universitaire SAE 106 : Étude des différences d'usages et de représentations de l'IA selon le statut et le département des membres de l'IUT. -->
+                                <div class="col-md-6">
+                                    <div class="card shadow-sm">
+                                        <img src="../img/UniversiteParis_IUTParis-RdS.png" class="card-img-top" alt="Analyse des usages de l'IA">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Study of the Uses of AI at the IUT</h5>
+                                            <p class="card-text">November 30, 2023 - January 17, 2024</p>
+                                            <p class="card-body">As part of a survey carried out among members of the IUT Paris - Rives de Seine, we analyzed the differences in uses and perceptions of artificial intelligence depending on status and departments.<br>This project made it possible to cross-reference quantitative data and draw conclusions on the integration of AI in higher education.</p>
+                                            <a href="../docs/SoutenanceSAE106_CASAS_HASSEN_UNITE_EL DAHDAH.pptx" class="btn btn-primary" download>Download the presentation</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#SD2" aria-expanded="false" aria-controls="SD2">
+                                BUT - SD - Visualization, design of decision-making tools - 2nd year
+                            </button>
+                            <div class="collapse" id="SD2">
+                                <!-- Projet universitaire SAE Série Temporelle : Analyse et modélisation de données épidémiologiques pour les syndromes grippaux. -->
+                                <div class="col-md-6">
+                                    <div class="card shadow-sm">
+                                        <img src="https://crh.cgos.info/files/2020-05/sante-publique-france.png?cd25074954" class="card-img-top" alt="Analyse épidémiologique">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Epidemiological Analysis of Influenza Syndromes</h5>
+                                            <p class="card-text">November 26, 2024 - January 10, 2025</p>
+                                            <p class="card-body">As part of an academic assignment, I collaborated on an in-depth analysis of epidemiological data using statistical models and time series to study incidence rates of influenza-like illnesses. This project allowed me to apply advanced skills in Python, data analysis and visualization.</p>
+                                            <a href="../docs/SAE_Rapport_Epidemie_Leo_Unite_Diego_Casas.pdf" class="btn btn-primary" download>Download the report</a>
+                                            <a href="../docs/Fiche de Mission _ Epidémiologie.pdf" class="btn btn-secondary" download>Download the mission sheet</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Projet de programmation statistique avec R : Analyse des ouvertures aux échecs de haut niveau -->
+                                <div class="col-md-6">
+                                    <div class="card shadow-sm">
+                                        <img src="https://www.buzzwebzine.fr/wp-content/uploads/2021/04/pieces-jeu-echecs.jpg" class="card-img-top" alt="Analyse épidémiologique">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Analysis of High-Level Chess Openings</h5>
+                                            <p class="card-text">December 17, 2024 - January 15, 2025</p>
+                                            <p class="card-body">Project analyzing high-level chess openings. The goal was to determine strategic trends in openings and their impact on player performance.</p>
+                                            <a href="../docs/Projet de programmation statistique avec R.pdf" class="btn btn-primary" download>Download the result sheet</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>              
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Social -->
+        <div class="social social-footer">
+            <div class="social_list-wrapper">
+                <div class="social_list">
+                    <!-- GitHub -->
+                    <a class="social_link social_link-github" href="https://github.com/TheColonel92" target="_blank">
+                        <span class="social_link-icon-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="25" height="25" class="d-inline-block align-text-top">
+                        </span>
+                        <span class="social_text-wrapper">
+                            <span class="social_link-title">GitHub</span>
+                            <span class="social_link-comment">TheColonel92</span>
+                        </span>
+                    </a>
+                    <!-- LinkedIn -->
+                    <a class="social_link social_link-linkedin" href="https://www.linkedin.com/in/lj-unite/" target="_blank">
+                        <span class="social_link-icon-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="25" height="25" class="d-inline-block align-text-top">
+                        </span>
+                        <span class="social_text-wrapper">
+                            <span class="social_link-title">LinkedIn</span>
+                            <span class="social_link-comment">Léo Jean UNITE</span>
+                        </span>
+                    </a>
+                    <!-- Discord -->
+                    <a class="social_link social_link-discord" href="https://discord.gg/CBsSTKzjrY" target="_blank">
+                        <span class="social_link-icon-wrapper">
+                            <img src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1-1.png" alt="Discord" width="25" height="25" class="d-inline-block align-text-top">
+                        </span>
+                        <span class="social_text-wrapper">
+                            <span class="social_link-title">Discord</span>
+                            <span class="social_link-comment">TheColonel's HQ</span>
+                        </span>
+                    </a>
+                    <!-- Instagram -->
+                    <a class="social_link social_link-ig" href="https://www.instagram.com/leoune_92/" target="_blank">
+                        <span class="social_link-icon-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" alt="Instagram" width="25" height="25" class="d-inline-block align-text-top">
+                        </span>
+                        <span class="social_text-wrapper">
+                            <span class="social_link-title">Instagram</span>
+                            <span class="social_link-comment">leoune_92</span>
+                        </span>
+                    </a>
+                    <!-- Facebook/Messenger -->
+                    <a class="social_link social_link-fb" href="https://www.facebook.com/profile.php?id=100011170991125" target="_blank">
+                        <span class="social_link-icon-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Logo_de_Facebook.png/767px-Logo_de_Facebook.png" alt="Facebook" width="25" height="25" class="d-inline-block align-text-top">
+                        </span>
+                        <span class="social_text-wrapper">
+                            <span class="social_link-title">Facebook</span>
+                            <span class="social_link-comment">Léo Jean UNITE</span>
+                        </span>
+                    </a>
+                    <!-- Youtube -->
+                    <a class="social_link social_link-yt" href="https://www.youtube.com/@ColUnite" target="_blank">
+                        <span class="social_link-icon-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/600px-YouTube_icon_%282013-2017%29.png" alt="Youtube" width="25" height="25" class="d-inline-block align-text-top">
+                        </span>
+                        <span class="social_text-wrapper">
+                            <span class="social_link-title">Youtube</span>
+                            <span class="social_link-comment">Col. Unite</span>
+                        </span>
+                    </a>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer text-center py-3" role="contentinfo">
+            <div claas="footer__wrapper">
+                <div class="footer__logotypes footer-logotypes">
+                    <!-- Logo de l'entreprise -->
+                    <a href="https://thecolonel92.github.io/">
+                        <img src="https://avatars.githubusercontent.com/u/174519077?v=4" alt="Logo UNITE" class="footer-logotypes__company">
+                    </a>
+                    <div class="footer-logotypes__list global__mobile-hidden">
+                        <!-- Logo Lycée Eugène Ionesco -->
+                         <a href="https://lyceeionesco.fr/" target="_blank">
+                            <img src="https://lyceeionesco.fr/modules/kcorrect/sign_ionesco.jpg" alt="Lycée Eugène Ionesco" class="footer-logotypes__school">
+                        </a>
+                        <!-- Logo Université Paris Cité -->
+                         <a href="https://u-paris.fr/" target="_blank">
+                            <img src="https://u-paris.fr/sante/wp-content/uploads/sites/19/2020/06/Universite_Paris_logo_horizontal.jpg" alt="Université Paris Cité" class="footer-logotypes__university">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    &copy; 2024—<span id="year"></span> Leo Jean. All rights reserved.
+                </div>
+            </div>
+        </footer>
+        <!-- Script Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Script de la page -->
+        <script>
+            // Année actuelle dans le footer
+            function updateYear() {
+                const currentYear = new Date().getFullYear();
+                document.getElementById("year").textContent = currentYear;
+            }
+            updateYear(); // Call the function to update the footer year
+            // Horloge
+            function updateTime() {
+              const franceTime = new Date().toLocaleString("fr-FR", { timeZone: "Europe/Paris", hour: "2-digit", minute: "2-digit" });
+              const philippinesTime = new Date().toLocaleString("en-PH", { timeZone: "Asia/Manila", hour: "2-digit", minute: "2-digit" });
+              document.getElementById("time-france").textContent = `France: ${franceTime}`;
+              document.getElementById("time-philippines").textContent = `Philippines: ${philippinesTime}`;
+            }
+            setInterval(updateTime, 1000);
+            updateTime();
+        </script>
+    </body>
+</html>
