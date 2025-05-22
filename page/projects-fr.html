@@ -30,16 +30,6 @@
                     <span id="time-france" class="text-light me-3"></span>
                     <span id="time-philippines" class="text-light"></span>
                 </div>
-                <script>
-                    function updateTime() {
-                        const franceTime = new Date().toLocaleString("fr-FR", { timeZone: "Europe/Paris", hour: "2-digit", minute: "2-digit" });
-                        const philippinesTime = new Date().toLocaleString("en-PH", { timeZone: "Asia/Manila", hour: "2-digit", minute: "2-digit" });
-                        document.getElementById("time-france").textContent = `France: ${franceTime}`;
-                        document.getElementById("time-philippines").textContent = `Philippines: ${philippinesTime}`;
-                    }
-                    setInterval(updateTime, 1000);
-                    updateTime();
-                </script>
                 <!-- Bouton pour mobiles -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
