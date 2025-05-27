@@ -432,5 +432,23 @@
             setInterval(updateTime, 1000);
             updateTime();
         </script>
+        <!-- Script JavaScript pour gérer l'affichage -->
+        <script>
+            document.getElementById('toggleAchievements').addEventListener('click', function() {
+                let personal = document.getElementById('personalAchievements');
+                let professional = document.getElementById('professionalAchievements');
+                let button = document.getElementById('toggleAchievements');
+
+                if (personal.classList.contains('show')) {
+                    personal.classList.remove('show');
+                    professional.classList.add('show');
+                    button.textContent = "Voir réalisations personnelles";
+                } else {
+                    personal.classList.add('show');
+                    professional.classList.remove('show');
+                    button.textContent = "Voir réalisations professionnelles";
+                }
+            });
+        </script>
     </body>
 </html>
