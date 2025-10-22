@@ -270,7 +270,7 @@ footer {
 .footer {
     position: relative;
     margin-top: auto;
-    background: rgba(0,0,0,.3)
+    background: rgba(15,19,24,.3)
 }
 
 .footer__wrapper {
@@ -366,4 +366,5 @@ footer {
     flex-direction: column;
     justify-content: center;
     padding: 0 10%
+
 }
