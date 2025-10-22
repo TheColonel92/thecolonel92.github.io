@@ -319,7 +319,12 @@ footer {
     margin-top: -8px
 }
 
-.footer-logotypes__school,.footer-logotypes__university {
+.footer-logotypes__school {
+    width: 75px;
+    margin-right: 35px;
+    margin-top: -8px
+}
+.footer-logotypes__university {
     width: 140px;
     margin-right: 35px;
     margin-top: -8px
@@ -368,5 +373,6 @@ footer {
     padding: 0 10%
 
 }
+
 
 
