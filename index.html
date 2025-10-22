@@ -394,19 +394,19 @@
                 const langLabel = {
                 fr: "Français",
                 en: "English",
-                fil: "Filipino"
+                tl: "Filipino"
                 };
                 document.getElementById("current-lang").textContent = langLabel[lang] || "Français";
-                // Changer le texte des éléments
+        
                 document.querySelectorAll("[data-lang-fr]").forEach(el => {
-                const langAttribute = el.getAttribute("data-lang-" + lang);
-                el.textContent = langAttribute !== null ? langAttribute : el.getAttribute("data-lang-fr");
+                el.textContent = el.getAttribute("data-lang-" + lang) || el.getAttribute("data-lang-fr");
                 });
-                // Changer les liens de langue
-                const links = document.querySelectorAll("a[href*='-fr.html']");
+        
+                // Mise à jour des liens
+                const links = document.querySelectorAll("a[href*='frtfc']");
                 links.forEach(link => {
                 const url = new URL(link.href, window.location.href);
-                url.pathname = url.pathname.replace(/-(fr|en|fil)\.html/, `-${lang}.html`);
+                url.pathname = url.pathname.replace(/-(fr|en|tl)\.html/, `-${lang}.html`);
                 link.href = url.pathname;
                 });
             }
@@ -426,4 +426,5 @@
         </script>
     </body>
 </html>
+
 
